@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/Mac/iTerm2%20zsh/</loc>
+    <lastmod>2017-07-04T05:21:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>iTerm2 + oh my zsh</title>
+        <pubTime>2017-06-02T10:36:02.000Z</pubTime>
+        
+        <tag>iterm</tag>
+         
+        <tag>zsh</tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/other/Hexo%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2017-07-04T05:15:22.000Z</lastmod>
     <data>
@@ -34,28 +56,6 @@
         <tag>zsh</tag>
          
         <tag>plugin</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/Mac/iTerm2%20zsh/</loc>
-    <lastmod>2017-07-04T03:37:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>iTerm2 + oh my zsh</title>
-        <pubTime>2017-06-02T10:36:02.000Z</pubTime>
-        
-        <tag>iterm</tag>
-         
-        <tag>zsh</tag>
          
          
            
