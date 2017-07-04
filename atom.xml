@@ -344,7 +344,7 @@
     <link href="http://yoursite.com/other/Hexo%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/other/Hexo 个人博客/</id>
     <published>2017-05-30T03:30:00.000Z</published>
-    <updated>2017-07-04T04:59:01.000Z</updated>
+    <updated>2017-07-04T05:13:32.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hexo-个人博客"><a href="#Hexo-个人博客" class="headerlink" title="Hexo 个人博客"></a>Hexo 个人博客</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Hexo是基于<strong>Node.js</strong>的静态博客框架，简单、轻量，其生成的静态网页可以托管在<strong>Github</strong>。<br>使用 <code>GitHubPages</code> + <code>Hexo</code>，一种简单高效的实现方式来搭建个人的博客。</p>
 <a id="more"></a>
@@ -423,6 +423,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">use_motion: true  # 开启动画效果</div><div class="line">use_motion: false # 关闭动画效果</div></pre></td></tr></table></figure>
 <p>背景动画 <code>canvas_nest</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">canvas_nest: true //开启动画</div><div class="line">canvas_nest: false //关闭动画</div></pre></td></tr></table></figure>
+<p>改变 <code>canvas</code> 动画的配置 打开 <code>layout/_scripts/vendors.swig</code> 文件，根据<img src="https://github.com/hustcc/canvas-nest.js" alt="canvas-nest.js文档">进行如下更改：</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="comment">% for name, internal in js_vendors %&#125;</span></div><div class="line">  &#123;<span class="comment">% set internal_script = url_for(theme.vendors._internal) + '/' + internal %&#125;</span></div><div class="line">    &#123;<span class="comment">% if name === 'canvas_nest' %&#125;</span></div><div class="line">      &lt;script type="text/javascript" color="135,218,255" opacity="0.6" count="66" src="&#123;&#123; theme.vendors[name] | default(internal_script) &#125;&#125;"&gt;&lt;/script&gt;</div><div class="line">    &#123;<span class="comment">% else %&#125;</span></div><div class="line">      &lt;script type="text/javascript" src="&#123;&#123; theme.vendors[name] | default(internal_script) &#125;&#125;"&gt;&lt;/script&gt;</div><div class="line">    &#123;<span class="comment">% endif %&#125;</span></div><div class="line">&#123;<span class="comment">% endfor %&#125;</span></div></pre></td></tr></table></figure>
 <h4 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h4><p>要添加背景图片，首先将图片 <code>background.jpg</code> 放到 <code>/source/uploads/</code> 目录下，然后，在文件 <code>/css/_custom/custom.styl</code>文件中添加下面一行内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">body &#123; background:url(/uploads/background.jpg);&#125;</div></pre></td></tr></table></figure>
 <p>同样可以添加其它背景，如侧栏背景 <code>sidebar</code> ，头部 <code>header</code> 等。</p>
