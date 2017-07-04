@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-04T03:30:21.000Z</updated>
+  <updated>2017-07-04T03:37:45.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="http://yoursite.com/Mac/oh-my-zsh%20%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/Mac/oh-my-zsh 插件/</id>
     <published>2017-06-03T12:30:02.000Z</published>
-    <updated>2017-07-04T03:30:21.000Z</updated>
+    <updated>2017-07-04T03:37:45.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="oh-my-zsh-插件"><a href="#oh-my-zsh-插件" class="headerlink" title="oh-my-zsh 插件"></a>oh-my-zsh 插件</h1><p><code>oh-my-zsh</code> 自带很多插件，有兴趣可以看<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank" rel="external">wiki的插件介绍</a></p>
 <h2 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="external">zsh-syntax-highlighting</a></h2><p>高亮 <code>zsh</code> 的关键字。</p>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting</div></pre></td></tr></table></figure>
 <p>在 <code>~/.zshrc</code> 中的 <code>plugins=()</code> 处添加 <code>zsh-syntax-highlighting</code></p>
+<a id="more"></a>
 <h2 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a><a href="https://github.com/wting/autojump" target="_blank" rel="external">autojump</a></h2><p>目录快速跳转，它会根据你 <code>cd</code> 的历史纪录智能判断你想去到哪个目录。也可以用 <code>oh-my-zsh</code> 自带的插件 <code>z</code>。</p>
 <h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install autojump</div></pre></td></tr></table></figure>
 <p>或</p>
@@ -112,7 +113,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;oh-my-zsh-插件&quot;&gt;&lt;a href=&quot;#oh-my-zsh-插件&quot; class=&quot;headerlink&quot; title=&quot;oh-my-zsh 插件&quot;&gt;&lt;/a&gt;oh-my-zsh 插件&lt;/h1&gt;&lt;p&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt; 自带很多插件，
+      &lt;h1 id=&quot;oh-my-zsh-插件&quot;&gt;&lt;a href=&quot;#oh-my-zsh-插件&quot; class=&quot;headerlink&quot; title=&quot;oh-my-zsh 插件&quot;&gt;&lt;/a&gt;oh-my-zsh 插件&lt;/h1&gt;&lt;p&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt; 自带很多插件，有兴趣可以看&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wiki的插件介绍&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;zsh-syntax-highlighting&quot;&gt;&lt;a href=&quot;#zsh-syntax-highlighting&quot; class=&quot;headerlink&quot; title=&quot;zsh-syntax-highlighting&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/zsh-users/zsh-syntax-highlighting&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;zsh-syntax-highlighting&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;高亮 &lt;code&gt;zsh&lt;/code&gt; 的关键字。&lt;/p&gt;
+&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&amp;#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&amp;#125;/plugins/zsh-syntax-highlighting&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 &lt;code&gt;~/.zshrc&lt;/code&gt; 中的 &lt;code&gt;plugins=()&lt;/code&gt; 处添加 &lt;code&gt;zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -130,15 +134,16 @@
     <link href="http://yoursite.com/Mac/iTerm2%20zsh/"/>
     <id>http://yoursite.com/Mac/iTerm2 zsh/</id>
     <published>2017-06-02T10:36:02.000Z</published>
-    <updated>2017-07-04T03:03:25.000Z</updated>
+    <updated>2017-07-04T03:37:30.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="iTerm2-zsh"><a href="#iTerm2-zsh" class="headerlink" title="iTerm2 zsh"></a>iTerm2 zsh</h1><h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 下载地址 <a href="http://www.iterm2.com" target="_blank" rel="external">http://www.iterm2.com</a></p>
+    <content type="html"><![CDATA[<h1 id="iTerm2-oh-my-zsh"><a href="#iTerm2-oh-my-zsh" class="headerlink" title="iTerm2 + oh my zsh"></a>iTerm2 + oh my zsh</h1><h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 下载地址 <a href="http://www.iterm2.com" target="_blank" rel="external">http://www.iterm2.com</a></p>
 <h3 id="偏好设置"><a href="#偏好设置" class="headerlink" title="偏好设置"></a>偏好设置</h3><ol>
 <li>打开热键 <code>Preferences - Keys</code>，勾选 <code>Hotkey</code> 中的 <code>Show/hide iTerm2 with a system-wide hotkey</code>，然后设定一个热键。如 <code>Command + .</code>，然后按 <code>Command + .</code> 就可以随时调出或者隐藏 <code>iTerm2</code> 了。</li>
 <li>颜色主题 <code>Preferences - Profiles - Colors</code> 右下角 <code>Color Presets</code> 选择主题。或从 <a href="http://iterm2colorschemes.com/" target="_blank" rel="external">iTerm Themes</a> 网站中下载第三方主题包，选择主题下的 <code>import</code> 操作，把下载的主题导入。</li>
 <li>终端灰蒙蒙 <code>Preferences - Profiles - Text - Text Rendering</code>，将 Draw bold text in bright colors 前面的勾去掉。</li>
 <li>复用上个会话的目录 <code>Preferences - Profiles - Working Directory</code> 勾选 Reuse previous session’s directory。</li>
 </ol>
+<a id="more"></a>
 <h3 id="Solarized主题"><a href="#Solarized主题" class="headerlink" title="Solarized主题"></a>Solarized主题</h3><p>更改配色方案为 <a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized</a><br>直接去主页下载或者使用 Git</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git://github.com/altercation/solarized.git</div></pre></td></tr></table></figure>
 <p>然后双击 <code>solarized/iterm2-colors-solarized/</code> 双击里面的文件，或 <code>import</code> 导入，然后再偏好设置中选择相应的主题。<br>也有terminal的配色 <code>solarized/osx-terminal.app-colors-solarized</code> 双击，然后再偏好设置中更改默认主题。</p>
@@ -228,7 +233,13 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;iTerm2-zsh&quot;&gt;&lt;a href=&quot;#iTerm2-zsh&quot; class=&quot;headerlink&quot; title=&quot;iTerm2 zsh&quot;&gt;&lt;/a&gt;iTerm2 zsh&lt;/h1&gt;&lt;h2 id=&quot;iTerm2&quot;&gt;&lt;a href=&quot;#iTerm2&quot; class=&quot;
+      &lt;h1 id=&quot;iTerm2-oh-my-zsh&quot;&gt;&lt;a href=&quot;#iTerm2-oh-my-zsh&quot; class=&quot;headerlink&quot; title=&quot;iTerm2 + oh my zsh&quot;&gt;&lt;/a&gt;iTerm2 + oh my zsh&lt;/h1&gt;&lt;h2 id=&quot;iTerm2&quot;&gt;&lt;a href=&quot;#iTerm2&quot; class=&quot;headerlink&quot; title=&quot;iTerm2&quot;&gt;&lt;/a&gt;iTerm2&lt;/h2&gt;&lt;p&gt;iTerm2 下载地址 &lt;a href=&quot;http://www.iterm2.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iterm2.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;偏好设置&quot;&gt;&lt;a href=&quot;#偏好设置&quot; class=&quot;headerlink&quot; title=&quot;偏好设置&quot;&gt;&lt;/a&gt;偏好设置&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;打开热键 &lt;code&gt;Preferences - Keys&lt;/code&gt;，勾选 &lt;code&gt;Hotkey&lt;/code&gt; 中的 &lt;code&gt;Show/hide iTerm2 with a system-wide hotkey&lt;/code&gt;，然后设定一个热键。如 &lt;code&gt;Command + .&lt;/code&gt;，然后按 &lt;code&gt;Command + .&lt;/code&gt; 就可以随时调出或者隐藏 &lt;code&gt;iTerm2&lt;/code&gt; 了。&lt;/li&gt;
+&lt;li&gt;颜色主题 &lt;code&gt;Preferences - Profiles - Colors&lt;/code&gt; 右下角 &lt;code&gt;Color Presets&lt;/code&gt; 选择主题。或从 &lt;a href=&quot;http://iterm2colorschemes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iTerm Themes&lt;/a&gt; 网站中下载第三方主题包，选择主题下的 &lt;code&gt;import&lt;/code&gt; 操作，把下载的主题导入。&lt;/li&gt;
+&lt;li&gt;终端灰蒙蒙 &lt;code&gt;Preferences - Profiles - Text - Text Rendering&lt;/code&gt;，将 Draw bold text in bright colors 前面的勾去掉。&lt;/li&gt;
+&lt;li&gt;复用上个会话的目录 &lt;code&gt;Preferences - Profiles - Working Directory&lt;/code&gt; 勾选 Reuse previous session’s directory。&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
