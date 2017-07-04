@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-04T03:37:45.000Z</updated>
+  <updated>2017-07-04T06:35:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cmder</title>
+    <link href="http://yoursite.com/win/cmder/"/>
+    <id>http://yoursite.com/win/cmder/</id>
+    <published>2017-06-04T10:36:02.000Z</published>
+    <updated>2017-07-04T06:35:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cmder"><a href="#cmder" class="headerlink" title="cmder"></a>cmder</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://cmder.net/" target="_blank" rel="external">Cmder</a>是一款Windows环境下非常简洁美观易用的 <code>cmd</code> 替代者,因为它是即压即用的存在，所以点击根目录下的 <code>Cmder.exe</code> 即可运行。<br>下载的时候，有两个版本，分别是 <code>mini</code> 与 <code>full</code> 版；唯一的差别在于有没有内建 <code>msysgit</code> 工具，这是 <code>Git for Windows</code> 的标准配备；全安装版 Cmder自带了 <code>msysgit</code>,除了 <code>git</code> 本身这个命令之外, 里面可以使用大量的 <code>linux</code> 命令；比如 <code>grep</code>, <code>curl</code>, <code>tar</code>, <code>unzip</code>, <code>ssh</code>, <code>bash</code>, <code>perl</code> 等。</p>
+<h2 id="配置-Cmder"><a href="#配置-Cmder" class="headerlink" title="配置 Cmder"></a>配置 Cmder</h2><h3 id="启动-Cmder"><a href="#启动-Cmder" class="headerlink" title="启动 Cmder"></a>启动 Cmder</h3><p>1.把 <code>Cmder</code> 加到环境变量，把 <code>Cmder.exe</code> 存放的目录添加到系统环境变量 <code>Path</code>；加完之后, <code>Win+r</code> 一下输入 <code>cmder</code>,即可使用。<br>2.添加 <code>Cmder</code> 到右键菜单，以管理员权限打开cmder终端输入以下语句回车即可: <code>Cmder.exe /REGISTER ALL</code>。<br>3.使用<code>AutoHotKey</code>热键，在<code>ahk</code>文件中添加如下代码，则使用 <code>Alt+c</code> 来打开 <code>cmder</code>    ,但有些新增命令无法使用，如 <code>node</code> <code>npm</code> 等。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">!c:: run, D:<span class="tag">\<span class="name">*</span></span>*<span class="tag">\<span class="name">cmder</span></span>_mini<span class="tag">\<span class="name">Cmder</span></span>.exe</div><div class="line">return</div></pre></td></tr></table></figure>
+<h3 id="修改命令提示符号"><a href="#修改命令提示符号" class="headerlink" title="修改命令提示符号"></a>修改命令提示符号</h3><p><code>Cmder</code> 预设的命列列提示符号是 <code>λ</code>;如果用着不习惯，可以将这个字元改成 <code>Mac/Linux</code> 环境下常见的 <code>$</code> 符号，具体操作如下：<br>打开 <code>cmder</code> 安装目录下的 <code>\vendor\clink.lua</code> 文件，将里面的 <code>λ</code> 替换为 <code>$</code>。但在使用 <code>powerShell</code> 时需要另行设置，<br>将 <code>\vendor\profile.ps1</code> 文件中的 <code>λ</code> 替换为 <code>$</code> 。</p>
+<h3 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h3><p>在设置中添加语言环境，<code>win+alt+p</code> 打开设置面板，找到 <code>Startup -&gt; Envrioment</code> 选项<br>在下面的文本框里添加一行 <code>set LANG=zh_CN.UTF-8</code>，然后重启。</p>
+<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><p>背景的透明度,找到 <code>Features -&gt; Transparency</code> 选项就可调节透明度。<br><code>Features -&gt; Colors</code> 可以调节颜色，<code>schemes</code> 可以选择主题。</p>
+<h3 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h3><p>自定义 <code>aliases</code> 打开Cmder目录下的 <code>config</code> 文件夹，里面的 <code>user-aliases</code> 文件就是我们可以配置的别名文件。像下面几个。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">..=cd ..  //输入..返回上一级文件夹</div><div class="line">gc=git commit -m <span class="formula">$1  //git提交</span></div><div class="line">sbl="D:<span class="tag">\<span class="name">Program</span></span> Files<span class="tag">\<span class="name">Sublime</span></span> Text 3<span class="tag">\<span class="name">sublime</span></span>_text.exe" $1 -new_console:s50H  //在窗口右边50<span class="comment">%横向打开sublime</span></div></pre></td></tr></table></figure>
+<p>但 <code>user-aliase</code> 中的别名只能在 <code>cmd</code> 下使用，在使用 <code>powershell</code> 时需要编辑  <code>\vendor\profile.ps1</code>  文件,如</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Set-Alias sbl "C:<span class="tag">\<span class="name">Program</span></span> Files<span class="tag">\<span class="name">Sublime</span></span> Text 3<span class="tag">\<span class="name">sublime</span></span>_text.exe"</div><div class="line"></div><div class="line">function Git-Status &#123; git status &#125;</div><div class="line">Set-Alias gs Git-Status</div></pre></td></tr></table></figure>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
+<li>打开设置面板                                                          =&gt; Win+Alt+P </li>
+<li>打开新的页签                                                          =&gt; Ctrl+T </li>
+<li>关闭页签                                                                 =&gt; Ctrl+W </li>
+<li>切换页签                                                                 =&gt; Ctrl+Tab </li>
+<li>关闭所有页签                                                         =&gt; Alt+F4 </li>
+<li>快速打开一个 CMD                                                 =&gt; Shift+Alt+1 </li>
+<li>快速打开一个 PowerShell                                     =&gt; Shift+Alt+2 </li>
+<li>快速打开一个 PowerShell(系统管理员权限)         =&gt; Shift+Alt+2 </li>
+<li>快速切换到第 1 个页签                                         =&gt; Ctrl+1 </li>
+<li>快速切换到第 n 个页签(n值无上限)                     =&gt; Ctrl+n </li>
+<li>历史命令搜索                                                         =&gt; Ctr+r </li>
+<li>全屏                                                                     =&gt; Alt+Enter</li>
+</ul>
+<h2 id="Chocolatey-软件包管理"><a href="#Chocolatey-软件包管理" class="headerlink" title="Chocolatey 软件包管理"></a>Chocolatey 软件包管理</h2><p>Chocolatey 是用命令行来安装应用程序的个包管理工具。</p>
+<h3 id="安装-chocolatey"><a href="#安装-chocolatey" class="headerlink" title="安装 chocolatey"></a>安装 chocolatey</h3><p>使用cmd，运行如下命令即可</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@"%SystemRoot%\System32\WindowsPowerShell\v1<span class="number">.0</span>\powershell.exe<span class="string">" -NoProfile -ExecutionPolicy Bypass -Command "</span>iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">'https://chocolatey.org/install.ps1'</span>))<span class="string">" &amp;&amp; SET "</span>PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin<span class="string">"</span></div></pre></td></tr></table></figure>
+<h3 id="choco-安装软件"><a href="#choco-安装软件" class="headerlink" title="choco 安装软件"></a>choco 安装软件</h3><p>安装软件命令 <code>choco install softwareName</code>, 短写是 <code>cinst softwareName</code><br>可安装的应用程序，默认安装在 <code>C:\Program Files\</code>，可以参见其 <a href="https://chocolatey.org/packages" target="_blank" rel="external">Package</a> 列表</p>
+<p>以下是 <code>window</code> 下开发常用的开发环境应用:</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">choco <span class="keyword">install</span> autohotkey.portable    <span class="comment">#安装 AutoHotkey (Portable)</span></div><div class="line">choco <span class="keyword">install</span> nodejs.<span class="keyword">install</span>  <span class="comment">#安装 node</span></div><div class="line">choco <span class="keyword">install</span> git.<span class="keyword">install</span>     <span class="comment">#安装 git</span></div><div class="line">choco <span class="keyword">install</span> ruby            <span class="comment">#安装 ruby</span></div><div class="line">choco <span class="keyword">install</span> python          <span class="comment">#安装 python</span></div><div class="line">choco <span class="keyword">install</span> jdk8            <span class="comment">#安装 JDK8</span></div><div class="line">choco <span class="keyword">install</span> googlechrome    <span class="comment">#安装 Chrome</span></div><div class="line">choco <span class="keyword">install</span> google-chrome-x64 <span class="comment">#Google Chrome (64-bit only)</span></div><div class="line">choco <span class="keyword">install</span> firefox         <span class="comment">#安装 firefox</span></div><div class="line">choco <span class="keyword">install</span> notepadplusplus.<span class="keyword">install</span> <span class="comment">#安装 notepad++</span></div><div class="line">choco <span class="keyword">install</span> Atom                    <span class="comment">#安装 Atom</span></div><div class="line">choco <span class="keyword">install</span> SublimeText3            <span class="comment">#安装 SublimeText3</span></div></pre></td></tr></table></figure>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.jianshu.com/p/7a706c0a3411" target="_blank" rel="external">cmder 一个比cmd强n倍的神器</a><br><a href="https://vxhly.github.io/2017/04/08/install-cmder-on-windows/" target="_blank" rel="external">在 windows 下安装 Cmder</a><br><a href="https://chocolatey.org/packages" target="_blank" rel="external">chocolatey</a><br><a href="http://cmder.net/" target="_blank" rel="external">cmder</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;cmder&quot;&gt;&lt;a href=&quot;#cmder&quot; class=&quot;headerlink&quot; title=&quot;cmder&quot;&gt;&lt;/a&gt;cmder&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简
+    
+    </summary>
+    
+      <category term="win" scheme="http://yoursite.com/categories/win/"/>
+    
+    
+      <category term="cmder" scheme="http://yoursite.com/tags/cmder/"/>
+    
+  </entry>
   
   <entry>
     <title>oh-my-zsh 插件</title>
