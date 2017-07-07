@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-04T06:46:13.000Z</updated>
+  <updated>2017-07-07T08:11:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nvm node版本管理</title>
+    <link href="http://yoursite.com/Mac/nvm%20node%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%20/"/>
+    <id>http://yoursite.com/Mac/nvm node版本管理 /</id>
+    <published>2017-06-05T04:30:02.000Z</published>
+    <updated>2017-07-07T08:11:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>管理 node 版本，<a href="https://github.com/creationix/nvm#install-script" target="_blank" rel="external">nvm 地址</a></p>
+<p>##安装<br>使用 <code>curl</code> 方式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</div></pre></td></tr></table></figure>
+<p>或 <code>Wget</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</div></pre></td></tr></table></figure>
+<p>验证是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">command -v nvm</div></pre></td></tr></table></figure>
+<p>成功返回 <code>nvm</code></p>
+<p>完成后 <code>nvm</code> 就被安装在了 <code>~/.nvm</code> 下，接下来就需要配一下环境变量，使用的 <code>zsh</code> 的话，就需要在 <code>~/.zshrc</code> 这个配置文件中配置，否则在 <code>~/.profile</code> 或 <code>~/.bash_profile</code> 中配置。<br>在配置文件中添加</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export NVM_DIR="$HOME/.nvm"</div><div class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh" # This loads nvm</div></pre></td></tr></table></figure>
+<p>但是 <code>. &quot;$NVM_DIR/nvm.sh&quot;</code> 会拖慢终端的启动。<br>解决方案 <a href="https://github.com/creationix/nvm/issues/860" target="_blank" rel="external">issue#860</a> 使用 <code>--no-use</code> 和 手动指定默认 <code>node</code> 路径来加快执行速度<br>默认路径可以通过 <code>nvm which default</code> 获取</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export NVM_DIR="$HOME/.nvm"</div><div class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"  --no-use</div><div class="line">export PATH=$HOME/.nvm/versions/node/v8.0.0/bin/:$PATH</div></pre></td></tr></table></figure>
+<p>输入 <code>nvm</code> 可以看到如下信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">Node Version Manager</div><div class="line">Note: &lt;version&gt; refers to any version-like string nvm understands. This includes:</div><div class="line">  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)</div><div class="line">  - default (built-in) aliases: node, stable, unstable, iojs, system</div><div class="line">  - custom aliases you define with `nvm alias foo`</div><div class="line"></div><div class="line"> Any options that produce colorized output should respect the `--no-colors` option.</div><div class="line"></div><div class="line">Usage:</div><div class="line">  nvm --help                                Show this message</div><div class="line">  nvm --version                             Print out the latest released version of nvm</div><div class="line">  nvm install [-s] &lt;version&gt;                Download and install a &lt;version&gt;, [-s] from source. Uses .nvmrc if available</div><div class="line">    --reinstall-packages-from=&lt;version&gt;     When installing, reinstall packages installed in &lt;node|iojs|node version number&gt;</div><div class="line">    --lts                                   When installing, only select from LTS (long-term support) versions</div><div class="line">    --lts=&lt;LTS name&gt;                        When installing, only select from versions for a specific LTS line</div><div class="line">  nvm uninstall &lt;version&gt;                   Uninstall a version</div><div class="line">  nvm uninstall --lts                       Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.</div><div class="line">  nvm uninstall --lts=&lt;LTS name&gt;            Uninstall using automatic alias for provided LTS line, if available.</div><div class="line">  nvm use [--silent] &lt;version&gt;              Modify PATH to use &lt;version&gt;. Uses .nvmrc if available</div><div class="line">    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.</div><div class="line">    --lts=&lt;LTS name&gt;                        Uses automatic alias for provided LTS line, if available.</div><div class="line">  nvm exec [--silent] &lt;version&gt; [&lt;command&gt;] Run &lt;command&gt; on &lt;version&gt;. Uses .nvmrc if available</div><div class="line">    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.</div><div class="line">    --lts=&lt;LTS name&gt;                        Uses automatic alias for provided LTS line, if available.</div><div class="line">  nvm run [--silent] &lt;version&gt; [&lt;args&gt;]     Run `node` on &lt;version&gt; with &lt;args&gt; as arguments. Uses .nvmrc if available</div><div class="line">    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.</div><div class="line">    --lts=&lt;LTS name&gt;                        Uses automatic alias for provided LTS line, if available.</div><div class="line">  nvm current                               Display currently activated version</div><div class="line">  nvm ls                                    List installed versions</div><div class="line">  nvm ls &lt;version&gt;                          List versions matching a given &lt;version&gt;</div><div class="line">  nvm ls-remote                             List remote versions available for install</div><div class="line">    --lts                                   When listing, only show LTS (long-term support) versions</div><div class="line">  nvm ls-remote &lt;version&gt;                   List remote versions available for install, matching a given &lt;version&gt;</div><div class="line">    --lts                                   When listing, only show LTS (long-term support) versions</div><div class="line">    --lts=&lt;LTS name&gt;                        When listing, only show versions for a specific LTS line</div><div class="line">  nvm version &lt;version&gt;                     Resolve the given description to a single local version</div><div class="line">  nvm version-remote &lt;version&gt;              Resolve the given description to a single remote version</div><div class="line">    --lts                                   When listing, only select from LTS (long-term support) versions</div><div class="line">    --lts=&lt;LTS name&gt;                        When listing, only select from versions for a specific LTS line</div><div class="line">  nvm deactivate                            Undo effects of `nvm` on current shell</div><div class="line">  nvm alias [&lt;pattern&gt;]                     Show all aliases beginning with &lt;pattern&gt;</div><div class="line">  nvm alias &lt;name&gt; &lt;version&gt;                Set an alias named &lt;name&gt; pointing to &lt;version&gt;</div><div class="line">  nvm unalias &lt;name&gt;                        Deletes the alias named &lt;name&gt;</div><div class="line">  nvm reinstall-packages &lt;version&gt;          Reinstall global `npm` packages contained in &lt;version&gt; to current version</div><div class="line">  nvm unload                                Unload `nvm` from shell</div><div class="line">  nvm which [&lt;version&gt;]                     Display path to installed node version. Uses .nvmrc if available</div><div class="line">  nvm cache dir                             Display path to the cache directory for nvm</div><div class="line">  nvm cache clear                           Empty cache directory for nvm</div><div class="line"></div><div class="line">Example:</div><div class="line">  nvm install v0.10.32                  Install a specific version number</div><div class="line">  nvm use 0.10                          Use the latest available 0.10.x release</div><div class="line">  nvm run 0.10.32 app.js                Run app.js using node v0.10.32</div><div class="line">  nvm exec 0.10.32 node app.js          Run `node app.js` with the PATH pointing to node v0.10.32</div><div class="line">  nvm alias default 0.10.32             Set default node version on a shell</div><div class="line"></div><div class="line">Note:</div><div class="line">  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)</div></pre></td></tr></table></figure>
+<p>可以看到 <code>nvm</code> 的全部命令<br>各项命令的详细用法及含义可参考 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm文档</a></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>查看可用的安装版本：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm ls-remote</div></pre></td></tr></table></figure>
+<p>最好使用 <code>LTS</code>(Long Term Support) 版本</p>
+<p>安装 <code>node</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nvm install v6.11.0</div><div class="line">nvm install node #最新版本</div></pre></td></tr></table></figure>
+<p>如果您想查看已安装的版本：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm ls</div></pre></td></tr></table></figure>
+<p>注：如果已经安装了 <code>node</code>，最好先删除已安装的 <code>node</code> 和全局 <code>node</code> 模块(node_modules)。<br><code>node</code> 命令在 <code>/usr/local/bin/node</code><br><code>npm</code> 命令在 <code>/usr/local/lib[lib64]/node_modules/npm</code></p>
+<p><code>npm ls -g --depth=0</code> // 查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 <code>node</code> 版本重新进行全局安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ls -g --depth=0 // 查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 node 版本重新进行全局安装</div><div class="line">sudo rm -rf /usr/local/lib/node_modules // 删除全局 node_modules 目录</div><div class="line">sudo rm /usr/local/bin/node // 删除 node</div><div class="line">cd /usr/local/bin &amp;&amp; ls -l | grep "../lib/node_modules/" | awk '&#123;print $9&#125;'| xargs rm #删除全局 node 模块注册的软链</div></pre></td></tr></table></figure>
+<p>安装完成，<code>nvm</code> 会将各个版本的node安装在 <code>~/.nvm/versions/node</code> 目录下</p>
+<p>看看目录下有些什么，安装的版本文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ls -a ~/.nvm/versions/node</div><div class="line">.       ..      v6.11.0</div></pre></td></tr></table></figure>
+<p><code>nvm</code> 会在 <code>$PATH</code> 前面安插指定版本的目录，可以确认实际的 <code>$PATH</code> 看看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">echo $PATH</div></pre></td></tr></table></figure>
+<p>接下来我们可以使用 <code>nvm use &lt;version&gt;</code> 切换版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm use v6.11.0</div></pre></td></tr></table></figure>
+<p>指定一个默认的 <code>node</code> 版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nvm alias default v6.11.0</div><div class="line">nvm current #查看当前版本</div></pre></td></tr></table></figure>
+<p>设置别名 <code>nvm alias my_alias &lt;name&gt;</code>，方便选择版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm alias 6 v6.11.0</div></pre></td></tr></table></figure>
+<p><code>nvm install</code> 命令经常执行失败，这时你需要到 <code>nodejs</code> 官网下载你想安装的版本，解压缩，然后复制到 <code>~/.nvm/versions/node/</code> 文件夹中，同样可以使用 <code>nvm</code> 切换。</p>
+<p>使用 <code>.nvmrc</code> 文件配置项目所使用的 <code>node</code> 版本</p>
+<p>如果你的默认 <code>node</code> 版本（通过 <code>nvm alias</code> 命令设置的）与项目所需的版本不同，则可在项目根目录或其任意父级目录中创建 <code>.nvmrc</code> 文件，在文件中指定使用的 <code>node</code> 版本号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd &lt;项目根目录&gt;  #进入项目根目录</div><div class="line">echo "v6.11.0" &gt; .nvmrc #添加 .nvmrc 文件并指定版本</div><div class="line">nvm use #无需指定版本号，会自动使用 .nvmrc 文件中配置的版本</div><div class="line">node -v #查看 node 是否切换为对应版本</div></pre></td></tr></table></figure>
+<h2 id="nvm-切换镜像源"><a href="#nvm-切换镜像源" class="headerlink" title="nvm 切换镜像源"></a>nvm 切换镜像源</h2><p>根据 nvm 官方提供的帮助文档，我们可以通过以下命令进行切换</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export NVM_NODEJS_ORG_MIRROR="http://npm.taobao.org/mirrors/node"</div></pre></td></tr></table></figure>
+<p><a href="http://npm.taobao.org/mirrors/node" target="_blank" rel="external">http://npm.taobao.org/mirrors/node</a> 是 <a href="https://npm.taobao.org" target="_blank" rel="external">淘宝NPM镜像</a> 提供的国内 <code>Node.js</code> 的安装镜像源。</p>
+<p>但是种方式，在每次重启终端都会失效。如果并不想每次打开终端，都需要重新设置 <code>NVM_NODEJS_ORG_MIRROR</code> 环境变量。需要在终端配置文件中添加：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export NVM_NODEJS_ORG_MIRROR="http://npm.taobao.org/mirrors/node"</div><div class="line">source ~/.nvm/nvm.sh</div></pre></td></tr></table></figure>
+<p> Windows 系统我们可以找到 <code>nvm-windows</code> 软件的安装目录中的 <code>settings.txt</code> 文件，增加以下内容:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node_mirror=http://npm.taobao.org/mirrors/node/</div></pre></td></tr></table></figure>
+<h2 id="npm-镜像"><a href="#npm-镜像" class="headerlink" title="npm 镜像"></a>npm 镜像</h2><p><code>npm</code> 默认从国外的源 <a href="https://registry.npmjs.org/" target="_blank" rel="external">https://registry.npmjs.org/</a> 获取和下载包信息，国内访问速度很不理想。</p>
+<p>国内 <code>npm</code> 镜像源</p>
+<p><code>cnpmjs</code> 镜像：<br>搜索地址：<a href="https://cnpmjs.org/" target="_blank" rel="external">https://cnpmjs.org/</a><br>registry: <a href="https://r.cnpmjs.org/" target="_blank" rel="external">https://r.cnpmjs.org/</a></p>
+<p>淘宝 <code>npm</code> 镜像：<br>搜索地址：<a href="https://npm.taobao.org/" target="_blank" rel="external">https://npm.taobao.org/</a><br>registry: <a href="https://registry.npm.taobao.org/" target="_blank" rel="external">https://registry.npm.taobao.org/</a></p>
+<p>使用方法<br>1.临时使用(不建议)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express --registry https://r.cnpmjs.org/</div></pre></td></tr></table></figure>
+<p>2.持久使用</p>
+<p>命令行修改 <code>npm</code> 配置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm config set registry https://r.cnpmjs.org/ #配置 registry</div><div class="line">npm config get registry #验证配置是否修改成功</div></pre></td></tr></table></figure>
+<p>或添加 <code>npm</code> 配置文件 <code>.npmrc</code> 编辑 <code>~/.npmrc</code> 加入下面内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">registry = https://r.cnpmjs.org</div></pre></td></tr></table></figure>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://segmentfault.com/a/1190000004404505" target="_blank" rel="external">node版本管理工具nvm-Mac下安装及使用</a><br><a href="https://segmentfault.com/a/1190000007998600" target="_blank" rel="external">使用nvm安装管理多个版本的node.js(适用于Mac和Windows系统)</a><br><a href="http://riny.net/2014/cnpm/" target="_blank" rel="external">国内优秀npm镜像推荐及使用</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;nvm&quot;&gt;&lt;a href=&quot;#nvm&quot; class=&quot;headerlink&quot; title=&quot;nvm&quot;&gt;&lt;/a&gt;nvm&lt;/h1&gt;&lt;p&gt;管理 node 版本，&lt;a href=&quot;https://github.com/creationix/nvm#install-scri
+    
+    </summary>
+    
+      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
+    
+    
+      <category term="nvm" scheme="http://yoursite.com/tags/nvm/"/>
+    
+      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+    
+  </entry>
   
   <entry>
     <title>cmder</title>
@@ -188,7 +271,7 @@
     <link href="http://yoursite.com/Mac/iTerm2%20zsh/"/>
     <id>http://yoursite.com/Mac/iTerm2 zsh/</id>
     <published>2017-06-02T10:36:02.000Z</published>
-    <updated>2017-07-04T05:21:55.000Z</updated>
+    <updated>2017-07-07T02:59:24.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="iTerm2-oh-my-zsh"><a href="#iTerm2-oh-my-zsh" class="headerlink" title="iTerm2 + oh my zsh"></a>iTerm2 + oh my zsh</h1><h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 下载地址 <a href="http://www.iterm2.com" target="_blank" rel="external">http://www.iterm2.com</a></p>
 <h3 id="偏好设置"><a href="#偏好设置" class="headerlink" title="偏好设置"></a>偏好设置</h3><ol>
@@ -207,7 +290,7 @@
 <h4 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h4><p>清理系统日志</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo rm /private/var/log/asl/*.asl</div></pre></td></tr></table></figure>
 <p>打开 item2 时使用 <code>/usr/bin/login</code> 命令使用户登录 <code>login</code> 命令需要读取 <code>asl</code> 文件，当 <code>asl</code> 文件很大时就会拖慢启动速度。所以也可以不让 <code>login</code> 命令显示上次登录时间：<br>打开 <code>iTerm2</code> 的偏好设置里，在 <code>Profiles - General - Command</code> 里选择为 <code>Command</code>，然后里边写入  <code>/usr/bin/login -pfq xxx</code> 其中 <code>xxx</code> 是你的用户名。</p>
-<h4 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h4><p><code>. &quot;$NVM_DIR/nvm.sh&quot;</code> 会拖慢了终端的启动。<br>解决方案 <a href="https://github.com/creationix/nvm/issues/860" target="_blank" rel="external">issue#860</a> 使用 <code>--no-use</code> 和 手动指定默认 <code>node</code> 路径来加快执行速度</p>
+<h4 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h4><p><code>. &quot;$NVM_DIR/nvm.sh&quot;</code> 会拖慢了终端的启动。<br>解决方案 <a href="https://github.com/creationix/nvm/issues/860" target="_blank" rel="external">issue#860</a> 使用 <code>--no-use</code> 和 手动指定默认 <code>node</code> 路径来加快执行速度<br>默认路径可以通过 <code>nvm which default</code> 获取</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export NVM_DIR="$HOME/.nvm"</div><div class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"  --no-use</div><div class="line">export PATH=$HOME/.nvm/versions/node/v8.0.0/bin/:$PATH</div></pre></td></tr></table></figure>
 <h3 id="iTerm2快捷键"><a href="#iTerm2快捷键" class="headerlink" title="iTerm2快捷键"></a>iTerm2快捷键</h3><p>标签</p>
 <ul>
