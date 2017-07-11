@@ -210,10 +210,11 @@
     <link href="http://yoursite.com/iOS/%E4%BF%AE%E6%94%B9AppStore%E4%B8%AD%E7%9A%84%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0/"/>
     <id>http://yoursite.com/iOS/修改AppStore中的公司名称/</id>
     <published>2017-06-06T06:36:02.000Z</published>
-    <updated>2017-07-11T09:28:16.000Z</updated>
+    <updated>2017-07-11T09:35:14.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="修改AppStore中的公司名称"><a href="#修改AppStore中的公司名称" class="headerlink" title="修改AppStore中的公司名称"></a>修改AppStore中的公司名称</h1><p>##代理人(agent)<br>苹果客服必须确认你是<strong>苹果开发者账号代理人</strong>，才会给你修改。<br>如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 <code>Developer</code> 打开 <code>Membership</code> 就能看见代理人是谁。<br><img src="media/14994164482452/agent.png" alt="agent"></p>
-<p>如果已经离职，你可以修改代理人信息，但是还要和代理人认证，所以直接对苹果客服声称自己就是代理人就即可。也可以添加管理员然后更换代理人。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<h1 id="修改AppStore中的公司名称"><a href="#修改AppStore中的公司名称" class="headerlink" title="修改AppStore中的公司名称"></a>修改AppStore中的公司名称</h1><p>公司更改了名字，所以appstore里的开发商名称需要更改，现在改好了，把过程记录一下，并不一定是最正确的方法。</p>
+<h2 id="代理人-agent"><a href="#代理人-agent" class="headerlink" title="代理人(agent)"></a>代理人(agent)</h2><p>苹果客服必须确认你是<strong>苹果开发者账号代理人</strong>，才会给你修改。<br>如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 <code>Developer</code> 打开 <code>Membership</code> 就能看见代理人是谁。<br><a id="more"></a><br><img src="http://oimhz3xpl.bkt.clouddn.com/agent.png" alt="agent"></p>
+<p>如果已经离职，你可以修改代理人信息，但是还要和代理人认证，所以直接对苹果客服声称自己就是代理人就即可。也可以添加管理员然后更换代理人。</p>
 <h2 id="更改名称"><a href="#更改名称" class="headerlink" title="更改名称"></a>更改名称</h2><h3 id="联系苹果客服"><a href="#联系苹果客服" class="headerlink" title="联系苹果客服"></a>联系苹果客服</h3><p>拨打苹果开发者(中国)电话 400-670-1855 告诉客服你要更改公司名称，必须要说你是代理人。或者用代理人的邮箱直接写邮件：“我需要更改公司名称”发送到 chinadev@asia.apple.com。</p>
 <p>然后客服会给你发一封邮件，邮件中包括需要你提供的信息和邓白氏的联系方式。</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">您好：</div><div class="line"></div><div class="line">感谢您对开发者计划的支持。我是XXX，很高兴为您服务。</div><div class="line"></div><div class="line">请回复此电子邮件并提供以下信息，以协助我们处理您的申请：</div><div class="line"></div><div class="line">1) 您原来组织的中英文名称是什么？</div><div class="line">2) 您原来的组织是否有应用在 App Store 上发布或处于审核状态？</div><div class="line">3) 您请求更新是否是因为您的应用或原来的组织已被收购？如果是，请回答以下问题：</div><div class="line">     • 只有应用被收购？还是组织也被收购？</div><div class="line">     • 组织被全盘收购？还是其中的某些部门被收购？</div><div class="line">     • 原来的组织仍在运营？还是已经解散？</div><div class="line">4) 您的新组织的中英文名称是什么？</div><div class="line">5) 您的新组织的地址和电话号码是什么（如果原来的地址和电话号码已更改）？</div><div class="line">6) 您的组织是否具有新的法人实体类型（例如 LLC）？</div><div class="line">7) 您的组织是否有新的“税务登记号”？如果有，请提供该编号。</div><div class="line"></div><div class="line">如果我们需要其他文件来验证此变更，我们将通知您。</div><div class="line">如果贵组织有 D-U-N-S 编号，建议您发送电子邮件至 D&amp;B，以确认您的档案处于最新状态：</div><div class="line"></div><div class="line">Dun &amp; Bradstreet 全球支持部门</div><div class="line">appdeveloper@dnb.com</div></pre></td></tr></table></figure>
@@ -238,8 +239,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;修改AppStore中的公司名称&quot;&gt;&lt;a href=&quot;#修改AppStore中的公司名称&quot; class=&quot;headerlink&quot; title=&quot;修改AppStore中的公司名称&quot;&gt;&lt;/a&gt;修改AppStore中的公司名称&lt;/h1&gt;&lt;p&gt;##代理人(agent)&lt;br&gt;苹果客服必须确认你是&lt;strong&gt;苹果开发者账号代理人&lt;/strong&gt;，才会给你修改。&lt;br&gt;如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 &lt;code&gt;Developer&lt;/code&gt; 打开 &lt;code&gt;Membership&lt;/code&gt; 就能看见代理人是谁。&lt;br&gt;&lt;img src=&quot;media/14994164482452/agent.png&quot; alt=&quot;agent&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如果已经离职，你可以修改代理人信息，但是还要和代理人认证，所以直接对苹果客服声称自己就是代理人就即可。也可以添加管理员然后更换代理人。&lt;br&gt;
+      &lt;h1 id=&quot;修改AppStore中的公司名称&quot;&gt;&lt;a href=&quot;#修改AppStore中的公司名称&quot; class=&quot;headerlink&quot; title=&quot;修改AppStore中的公司名称&quot;&gt;&lt;/a&gt;修改AppStore中的公司名称&lt;/h1&gt;&lt;p&gt;公司更改了名字，所以appstore里的开发商名称需要更改，现在改好了，把过程记录一下，并不一定是最正确的方法。&lt;/p&gt;
+&lt;h2 id=&quot;代理人-agent&quot;&gt;&lt;a href=&quot;#代理人-agent&quot; class=&quot;headerlink&quot; title=&quot;代理人(agent)&quot;&gt;&lt;/a&gt;代理人(agent)&lt;/h2&gt;&lt;p&gt;苹果客服必须确认你是&lt;strong&gt;苹果开发者账号代理人&lt;/strong&gt;，才会给你修改。&lt;br&gt;如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 &lt;code&gt;Developer&lt;/code&gt; 打开 &lt;code&gt;Membership&lt;/code&gt; 就能看见代理人是谁。&lt;br&gt;
     
     </summary>
     
