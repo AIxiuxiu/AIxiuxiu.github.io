@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-07T09:35:17.000Z</updated>
+  <updated>2017-06-27T06:11:36.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,47 +16,210 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>修改AppStore中的公司名称</title>
-    <link href="http://yoursite.com/iOS/---/"/>
-    <id>http://yoursite.com/iOS/---/</id>
-    <published>2017-06-06T06:36:02.000Z</published>
-    <updated>2017-07-07T09:35:17.000Z</updated>
+    <title></title>
+    <link href="http://yoursite.com/other/media/14985269330870/README/"/>
+    <id>http://yoursite.com/other/media/14985269330870/README/</id>
+    <published>2017-06-27T06:11:36.000Z</published>
+    <updated>2017-06-27T06:11:36.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="修改AppStore中的公司名称"><a href="#修改AppStore中的公司名称" class="headerlink" title="修改AppStore中的公司名称"></a>修改AppStore中的公司名称</h1><p>##代理人(agent)<br>苹果客服必须确认你是<strong>苹果开发者账号代理人</strong>，才会给你修改。<br>如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 <code>Developer</code> 打开 <code>Membership</code> 就能看见代理人是谁。<br><a id="more"></a><br><img src="media/14994164482452/agent.png" alt="agent"></p>
-<p>如果已经离职，你可以修改代理人信息，但是还要和代理人认证，所以直接对苹果客服声称自己就是代理人就即可。也可以添加管理员然后更换代理人。</p>
-<h2 id="更改名称"><a href="#更改名称" class="headerlink" title="更改名称"></a>更改名称</h2><h3 id="联系苹果客服"><a href="#联系苹果客服" class="headerlink" title="联系苹果客服"></a>联系苹果客服</h3><p>拨打苹果开发者(中国)电话 400-670-1855 告诉客服你要更改公司名称，必须要说你是代理人。或者用代理人的邮箱直接写邮件：“我需要更改公司名称”发送到 chinadev@asia.apple.com。</p>
-<p>然后客服会给你发一封邮件，邮件中包括需要你提供的信息和邓白氏的联系方式。</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">您好：</div><div class="line"></div><div class="line">感谢您对开发者计划的支持。我是XXX，很高兴为您服务。</div><div class="line"></div><div class="line">请回复此电子邮件并提供以下信息，以协助我们处理您的申请：</div><div class="line"></div><div class="line">1) 您原来组织的中英文名称是什么？</div><div class="line">2) 您原来的组织是否有应用在 App Store 上发布或处于审核状态？</div><div class="line">3) 您请求更新是否是因为您的应用或原来的组织已被收购？如果是，请回答以下问题：</div><div class="line">     • 只有应用被收购？还是组织也被收购？</div><div class="line">     • 组织被全盘收购？还是其中的某些部门被收购？</div><div class="line">     • 原来的组织仍在运营？还是已经解散？</div><div class="line">4) 您的新组织的中英文名称是什么？</div><div class="line">5) 您的新组织的地址和电话号码是什么（如果原来的地址和电话号码已更改）？</div><div class="line">6) 您的组织是否具有新的法人实体类型（例如 LLC）？</div><div class="line">7) 您的组织是否有新的“税务登记号”？如果有，请提供该编号。</div><div class="line"></div><div class="line">如果我们需要其他文件来验证此变更，我们将通知您。</div><div class="line">如果贵组织有 D-U-N-S 编号，建议您发送电子邮件至 D&amp;B，以确认您的档案处于最新状态：</div><div class="line"></div><div class="line">Dun &amp; Bradstreet 全球支持部门</div><div class="line">appdeveloper@dnb.com</div></pre></td></tr></table></figure>
-<p>如果你需要更该英文名称，你需要联系邓白氏，因为一个公司只有一个邓白氏编码，为了保证，你现在的新名称公司将沿用之前的邓白氏码。</p>
-<h3 id="联系邓白氏"><a href="#联系邓白氏" class="headerlink" title="联系邓白氏"></a>联系邓白氏</h3><p>发送邮件到 appdeveloper@dnb.com，邮件内容是你需要修改的信息，并且一定要备注下：“请下单到中国邓白氏”！</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">公司名称需要做一下更改：</div><div class="line">1.XXXX技术有限公司改为“xxxx有限公司”</div><div class="line">2.xxxx Technology Co., Ltd.改为"xxxx Co., Ltd.”</div><div class="line">备注：“请下单到中国邓白氏”</div></pre></td></tr></table></figure>
-<p>然后会收到苹果邓白氏的回复，大概如下：</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Thank you for submitting your D-U-N-S Number request / update to D&amp;B. </div><div class="line">It should be completed by 07/05/2017, or sooner.</div><div class="line"></div><div class="line">Your request id is: 100000-100000. </div><div class="line"></div><div class="line">A D&amp;B representative may be contacting you directly.  </div><div class="line">Your cooperation will help to expedite the resolution of this request.</div><div class="line"></div><div class="line">Please contact applecs@dnb.com if you have any questions.</div></pre></td></tr></table></figure>
-<p>然后差不多第二天华夏邓白氏会联系你进行公司的信息核实。</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">您好，</div><div class="line"> </div><div class="line">我们是上海华夏邓白氏，现收到您在苹果网站提交的申请，在给到编码之前我们需要核实信息，原订单有给到编码是属于XXXX技术有限公司，若您不是该公司请不要使用编码，我们核实好信息后，系统会发送正确的编码给到您，拨打座机02988993783，该订单是6/28 到期，请最晚于6/28 下午1点前回复邮件，若不能及时取得联系，该订单只能无法确认处理了，谢谢</div><div class="line"> </div><div class="line">以下是需要核实的内容</div><div class="line"> </div><div class="line">公司的注册名字 中英文</div><div class="line">公司若更过注册名字，请写出之前名字</div><div class="line">公司的实际办公地址及邮编（邮编请写详细的）  中英文</div><div class="line">公司电话（请与办公地址的城市保持一致）</div><div class="line">公司有无分公司或办事处</div><div class="line">公司有无英文缩写或简称，有请写出</div><div class="line">公司企业性质（营业执照上的公司类型）</div><div class="line">公司大致的员工人数</div><div class="line">公司主营业务(一个最主要的业务)</div><div class="line">贵公司苹果项目负责人的名字，职务，性别，联系电话</div></pre></td></tr></table></figure>
-<p>回复之后等待回复，下面是华夏邓白氏回复的信息</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">稍后办理好，24小时内系统会自动发编码到苹果注册邮箱内，最晚14个工作日编码才能使用。</div><div class="line">若着急使用，可以在一周后尝试，但请注意尝试次数不要超过3次，超过次数编码会被锁住，</div><div class="line">解锁及注册方面问题请找苹果客服，电话：4006701855</div><div class="line">注：包含邓白氏编码的邮件是由系统自动发送的，里面的信息是当时您自己在苹果网站上提交的原始信息，并不是核实好的内容。</div><div class="line">由于使用编码时需要再次填写公司信息，请和今天核实好的公司名字与地址保持一致。</div></pre></td></tr></table></figure>
-<p>最后收到苹果发来的邓白氏编码，就说明已将更新完成了。</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">Your D-U-N-S Number request/update submitted on 6/21/2017 with ID Number 1000000-100000 has been completed.  </div><div class="line">You may start using your number in 14 days.</div><div class="line"></div><div class="line">D-U-N-S Number: 111111111</div><div class="line"></div><div class="line">Resolution Description: Match Found via host investigation, host database updated</div><div class="line"></div><div class="line">The following information was submitted as part of your request:</div><div class="line">Business Name: xxxx co., LTD</div><div class="line">City: xx</div><div class="line">Country: xxxx</div><div class="line"></div><div class="line">Thank you for using D&amp;B's Mini Investigation Service.</div></pre></td></tr></table></figure>
-<p>邮件会附带你公司之前的信息，而且说明最晚14天之后才会更新到苹果的数据库。这我也不知道如何去查询是否已更新。我是等了一个星期，然后使用 <a href="https://developer.apple.com/enroll/duns-lookup/" target="_blank" rel="external">D-U-N-S Number look up tool</a> 工具来查询的。<br>更新之后就可以给苹果客服回复了(也就是第一封邮件)，所以如果要更新邓白氏最好新联系邓白氏，然后再联系苹果客服。</p>
-<p>之后苹果会让你将你公司的营业执照以及公司变更名称证明发送给他。</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">您好：</div><div class="line"></div><div class="line">我们负责跟进您对于更新帐户中所示公司名称的请求。</div><div class="line"></div><div class="line">关于您的请求，我们需要更进一步的信息。我已经开通您的上传功能。</div><div class="line">请您尝试使用以下的链接上传贵公司的营业执照以及公司变更名称证明：</div><div class="line"></div><div class="line">https://developer.apple.com/contact/file-upload/</div><div class="line"></div><div class="line">我们建议您使用 Apple 的 Safari 浏览器。请注意档案大小不可超过 5MB。</div><div class="line">我们接受以下档案类型：JPG、PNG、TIFF、以及 PDF。</div><div class="line"></div><div class="line">上传后请您回复此邮件。</div><div class="line"></div><div class="line">请使用 Safari 浏览器来上载您的文件。</div><div class="line"></div><div class="line">若您只是需要更新您的英文公司名称，请直接联系 Dun &amp; Bradstreet (D&amp;B)，并请求更新您的 D&amp;B 档案：</div><div class="line"></div><div class="line">Dun &amp; Bradstreet 全球支持部门</div><div class="line"></div><div class="line">appdeveloper@dnb.com</div><div class="line"></div><div class="line">在他们确认已更新您的英文公司名称后，请回复此电子邮件。</div><div class="line"></div><div class="line">请注意，我们最长可能需要 14 个工作日才能从 D&amp;B 收到更新后的公司名称并在我们的系统中进行更新。</div><div class="line"></div><div class="line">如果您有任何问题或需要进一步的帮助，欢迎与我们联系。</div><div class="line">我们的办公时间是北京时间周一至周五，09:00 至 17:00，电话号码是 4006 701 855。</div><div class="line">当您来电时请告知我们案例编号: 10000000000 以便我们可以快速的找到您的申请。</div></pre></td></tr></table></figure>
-<p>上传证明之后一两天就会把公司名称改过来。</p>
-<p>看到这好像更改英文名称只需要联系邓白氏，更改 appstore 里的中文名称才需要联系苹果开发者。</p>
+    <content type="html"><![CDATA[<h1 id="anna"><a href="#anna" class="headerlink" title="anna"></a>anna</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;anna&quot;&gt;&lt;a href=&quot;#anna&quot; class=&quot;headerlink&quot; title=&quot;anna&quot;&gt;&lt;/a&gt;anna&lt;/h1&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git</title>
+    <link href="http://yoursite.com/other/git/"/>
+    <id>http://yoursite.com/other/git/</id>
+    <published>2017-06-06T13:10:00.000Z</published>
+    <updated>2017-07-11T09:20:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在 <code>Mac</code> 上安装 <code>Git</code> 有多种方式。 最简单的方法是安装 <code>Xcode Command Line Tools</code>。 <code>Mavericks （10.9</code>） 或更高版本的系统中，在 <code>Terminal</code> 里尝试首次运行 <code>git</code> 命令即可。 如果没有安装过命令行开发者工具，将会提示你安装。</p>
+<p>使用图形化的 Git 安装工具,<a href="https://git-scm.com/download/mac" target="_blank" rel="external">下载地址</a></p>
+<p>安装完成之后就是开始使用了，<code>git</code> 有两种使用方式 <strong>GUI</strong> 和 <strong>命令行</strong>。<br>使用 <code>GUI</code> 可以去<a href="https://git-scm.com/downloads/guis" target="_blank" rel="external">git提供的GUI</a>中选择，下面主要介绍命令行的使用方法。<br><a id="more"></a></p>
+<h2 id="获取-Git-仓库"><a href="#获取-Git-仓库" class="headerlink" title="获取 Git 仓库"></a>获取 Git 仓库</h2><p>有两种取得 Git 项目仓库的方法。 第一种是在现有项目或目录下导入所有文件到 Git 中； 第二种是从一个服务器克隆一个现有的 Git 仓库。</p>
+<h3 id="在现有目录中初始化仓库"><a href="#在现有目录中初始化仓库" class="headerlink" title="在现有目录中初始化仓库"></a>在现有目录中初始化仓库</h3><p>在当前目录执行 <code>git init</code><br>该命令将创建一个名为 <code>.git</code> 的子目录，这个子目录含有你初始化的 <code>Git</code> 仓库中所有的必须文件，这些文件是 <code>Git</code> 仓库的骨干。 但是，在这个时候，我们仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪。<br>你可通过 <code>git add</code> 命令来实现对指定文件的跟踪，然后执行 <code>git commit</code> 提交：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git add -a</div><div class="line">git commit -m 'initial project version'</div></pre></td></tr></table></figure>
+<p>也可以新建一个目录，将其初始化为 <code>Git</code> 代码库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init [project-name]</div></pre></td></tr></table></figure>
+<h3 id="克隆现有的仓库"><a href="#克隆现有的仓库" class="headerlink" title="克隆现有的仓库"></a>克隆现有的仓库</h3><p>当你执行 git clone 命令的时候，默认配置下远程 Git 仓库中的每一个文件的每一个版本都将被拉取下来。<br>克隆仓库的命令格式是 <code>git clone [url]</code> 。 比如，要克隆 <code>Git</code> 的可链接库 <code>libgit2</code>，可以用下面的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/libgit2/libgit2</div></pre></td></tr></table></figure>
+<p>如果想自定义本地仓库的名字可使用：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/libgit2/libgit2 mylibgit</div></pre></td></tr></table></figure>
+<h2 id="文件的操作"><a href="#文件的操作" class="headerlink" title="文件的操作"></a>文件的操作</h2><h3 id="检查当前文件状态"><a href="#检查当前文件状态" class="headerlink" title="检查当前文件状态"></a>检查当前文件状态</h3><p>使用 <code>git status</code> 查看当前文件状态,使用 <code>git status -s</code> 命令或 <code>git status --short</code> 命令，你将得到一种更为紧凑的格式输出。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git status</div><div class="line">On branch master</div><div class="line">Initial commit</div><div class="line">nothing to commit (create/copy files and use "git add" to track)</div></pre></td></tr></table></figure>
+<p>这说明你现在的工作目录相当干净。换句话说，所有已跟踪文件在上次提交后都未被更改过。 此外，上面的信息还表明，当前目录下没有出现任何处于未跟踪状态的新文件，否则 <code>Git</code> 会在这里列出来。 最后，该命令还显示了当前所在分支，并告诉你这个分支同远程服务器上对应的分支没有偏离。 现在，分支名是 <code>master</code>,这是默认的分支名。</p>
+<p>现在，让我们在项目下创建一个新的 <code>README</code> 文件。 如果之前并不存在这个文件，使用 <code>git status</code> 命令，你将看到一个新的未跟踪文件 <code>README</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">echo "git" &gt;  README</div><div class="line">git status</div><div class="line">On branch master</div><div class="line">Initial commit</div><div class="line">Untracked files:</div><div class="line">  (use "git add &lt;file&gt;..." to include in what will be committed)</div><div class="line">	README</div><div class="line">nothing added to commit but untracked files present (use "git add" to track)</div></pre></td></tr></table></figure>
+<p>它告诉我有一个还未追踪的文件，并提示我可以使用 <code>git add &lt;file&gt;...</code> 把它加进去。</p>
+<h3 id="查看已暂存和未暂存的修改"><a href="#查看已暂存和未暂存的修改" class="headerlink" title="查看已暂存和未暂存的修改"></a>查看已暂存和未暂存的修改</h3><p>如果 <code>git status</code> 命令的输出对于你来说过于模糊，你想知道具体修改了什么地方，可以用 <code>git diff</code> 命令,<code>git diff</code> 可以看文件做了哪些变化<br>它默认跟最新的一个commit进行比较。<br>红色（前面有减号-）表示删除，绿色（前面有加号+）表示添加。</p>
+<p><code>git diff --cached</code> 查看已暂存的将要添加到下次提交里的内容</p>
+<p>假如现在想撤销这些更改 <code>git checkout -- .</code><br><code>git checkout -- file</code> 可以丢弃工作区的修改<br>这里有两种情况：<br>一种是自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；<br>一种是已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。</p>
+<h3 id="跟踪新文件"><a href="#跟踪新文件" class="headerlink" title="跟踪新文件"></a>跟踪新文件</h3><p>更新状态使用 <code>git add -A</code> 或 <code>git add .</code> （空格+ 点） 表示当前目录所有文件</p>
+<p>再次使用 <code>git status</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git add README</div><div class="line">git status</div><div class="line">On branch master</div><div class="line">Initial commit</div><div class="line">Changes to be committed:</div><div class="line">  (use "git rm --cached &lt;file&gt;..." to unstage)</div><div class="line">	new file:   README</div></pre></td></tr></table></figure>
+<p>状态变了 <code>README</code> 处于暂存状态,说明add成功了.<br><code>Changes to be committed</code> 说明现在可以执行 <code>commit</code> 了<br><code>git rm --cached &lt;file&gt;...</code> 将文件从 <code>stage</code> 里移出</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rm --cached README</div><div class="line">rm 'README'</div></pre></td></tr></table></figure>
+<blockquote>
+<p>git reset HEAD 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了<br>git reset HEAD XXX/XXX/XXX.Java 就是对某个文件进行撤销了<br><strong>HEAD</strong>，表示最新的版本</p>
+</blockquote>
+<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><p><code>git commit -m &quot;提交信息&quot;</code><br>将文件提交到 <code>repository</code> 里</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git commit -m "first commit"</div><div class="line">[master (root-commit) a74782d] first commit</div><div class="line"> 1 file changed, 1 insertion(+)</div><div class="line"> create mode 100644 README</div></pre></td></tr></table></figure>
+<p><code>git commit</code> 这种方式会启动文本编辑器以便输入本次提交的说明。</p>
+<p>提交时记录的是放在暂存区域的快照。 任何还未暂存的仍然保持已修改状态。如果觉得这么做略显繁琐，可以直接跳过使用暂存区域。<br>只要在提交的时候，给 <code>git commit</code> 加上 <code>-a</code> 选项，<code>Git</code> 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 <code>git add</code> 步骤。</p>
+<p>修改 <code>README</code> 文件，直接提交：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git commit -a -m "commit"</div><div class="line">[master 1a61fd5] commit</div><div class="line"> 1 file changed, 1 insertion(+)</div></pre></td></tr></table></figure>
+<p>提交之前不再需要 <code>git add</code> <code>README</code> 文件了，但是如果是未跟踪过（新建）的文件是不能被提交的，所以不建议这样用。</p>
+<p><code>git commit --amend</code> 重新提交,这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令），那么快照会保持不变，而你所修改的只是提交信息。就是代替上次提交的结果。</p>
+<h3 id="移除文件"><a href="#移除文件" class="headerlink" title="移除文件"></a>移除文件</h3><p>要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。 可以用 git rm 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rm README</div><div class="line">rm 'README'</div></pre></td></tr></table></figure>
+<p>相当于</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rm README</div><div class="line">git add README</div></pre></td></tr></table></figure>
+<p>下一次提交时，该文件就不再纳入版本管理了。 如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 <code>-f</code>（译注：即 <code>force</code> 的首字母）。 这是一种安全特性，用于防止误删还没有添加到快照的数据，这样的数据不能被 <code>Git</code> 恢复。</p>
+<p>另外一种情况是，我们想把文件从 <code>Git</code> 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。 换句话说，你想让文件保留在磁盘，但是并不想让 <code>Git</code> 继续跟踪。 当你忘记添加 <code>.gitignore</code> 文件，不小心把一个很大的日志文件或一堆 .a 这样的编译生成文件添加到暂存区时，这一做法尤其有用。 为达到这一目的，使用 <code>--cached</code> 选项：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached README</div></pre></td></tr></table></figure>
+<p>恢复文件<br>如果还未提交缓存区（没<code>add</code>）直接使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -- README</div></pre></td></tr></table></figure>
+<p>即可恢复<br>如果已提交缓存区，需要回到最近一次 <code>git commit</code> 或 <code>git add</code> 时的状态，再恢复。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset HEAD</div><div class="line">git checkout -- README</div></pre></td></tr></table></figure>
+<h3 id="移动文件"><a href="#移动文件" class="headerlink" title="移动文件"></a>移动文件</h3><p>要在 Git 中对文件改名 <code>git mv file_from file_to</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git mv README README.md</div></pre></td></tr></table></figure>
+<p>相当于运行了下面三条命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mv README README.md</div><div class="line">git rm README</div><div class="line">git add README.md</div></pre></td></tr></table></figure>
+<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><p><code>git log</code> 可以看到提交的记录，会按提交时间列出所有的更新，最近的更新排在最上面。<br>常用的选项如：<br><code>git log -1</code> 最近一次的提交<br><code>git log -p -2</code> 显示最近两次提交的内容差异<br><code>git log --stat</code> <code>--stat</code> 选项在每次提交的下面列出额所有被修改过的文件、有多少文件被修改了以及被修改过的文件的哪些行被移除或是添加了<br><code>git log --pretty=oneline</code> 将每个提交放在一行显示，查看的提交数很大时非常有用<br><code>git log --pretty=oneline --graph</code> <code>--graph</code> 选项添加了一些 <code>ASCII</code> 字符串来形象地展示你的分支、合并历史。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git log</div><div class="line">commit a74782dd6876921c0a1fb338c4637afe722623d8</div><div class="line">Author: yourname &lt;youremail@email.com&gt;</div><div class="line">Date:   Tue Jul 4 16:29:43 2017 +0800</div><div class="line">    first commit</div></pre></td></tr></table></figure>
+<p><strong>q</strong>键可以退出</p>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p><code>git log --pretty=oneline</code> 获取版本号的commit_id<br><code>git reset --hard commit_id</code>  取版本号前7位也可以</p>
+<p><code>Git</code> 必须知道当前版本是哪个版本，在 <code>Git</code> 中，用<strong>HEAD</strong>表示当前版本，也就是最新的提交的，上一个版本就是 <code>HEAD^</code>，上上一个版本就是 <code>HEAD^^</code>，当然往上100个版本不可能写100个<code>^</code> ，应写成 <code>HEAD~100</code>。</p>
+<p>如何回到最新版呢<br><code>git reflog</code> 记录你的每一次命令。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git reflog</div><div class="line">2008cf5 HEAD@&#123;2&#125;: reset: moving to HEAD</div><div class="line">a74782d HEAD@&#123;13&#125;: commit (initial): first commit</div></pre></td></tr></table></figure>
+<p>第一行表示当前 <code>HEAD</code> 所在的版本号是 2008cf5 ，而之所以在这个版本号，是由于我们执行了 <code>reset</code> 命令。<br>再用一次 <code>reset</code>，将 <code>HEAD</code> 指向 a74782d<br><code>git reset --hard a74782d</code><br>回到第一次reset前的状态了</p>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并"><a href="#创建与合并" class="headerlink" title="创建与合并"></a>创建与合并</h3><p>创建dev分支，然后切换到dev分支：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b dev</div></pre></td></tr></table></figure>
+<p><code>git checkout</code> 命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
+<blockquote>
+<p>git branch dev<br>git checkout dev</p>
+</blockquote>
+<p><code>git branch</code> 查看当前分支<br><code>git branch</code> 命令会列出所有分支，当前分支前面会标一个 * 号。</p>
+<p>修改内容后提交，切换回 <code>master</code> 分支：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout master</div></pre></td></tr></table></figure>
+<p>修改的内容不见了,因为那个提交是在 <code>dev</code> 分支上，而 <code>master</code> 分支此刻的提交点并没有变</p>
+<p>把 <code>dev</code> 分支的工作成果合并到 <code>master</code> 分支上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git merge dev</div></pre></td></tr></table></figure>
+<p><code>git merge</code> 命令用于合并指定分支到当前分支。合并后就可以看到，和dev分支的最新提交是完全一样的。</p>
+<p>合并完成后，就可以放心地删除 <code>dev</code> 分支了(不能删除当前分支)<br><code>git branch -d dev</code></p>
+<p>因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在 <code>master</code> 分支上工作效果是一样的，但过程更安全。</p>
+<h3 id="合并冲突"><a href="#合并冲突" class="headerlink" title="合并冲突"></a>合并冲突</h3><p>当分支中更改的内容在 <code>master</code> 分支已经更改，合并时会发生冲突。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git merge dev</div><div class="line">Auto-merging README.md</div><div class="line">CONFLICT (content): Merge conflict in README.md</div><div class="line">Automatic merge failed; fix conflicts and then commit the result.</div></pre></td></tr></table></figure>
+<p><code>git status</code> 也可以告诉我们冲突的文件<br>Git用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，我们修改如下后保存在提交。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add</div><div class="line">git commit -m   #提交</div><div class="line">git branch -d   #最后，删除分支。</div></pre></td></tr></table></figure>
+<p><code>git log --graph</code> 命令可以看到分支合并图</p>
+<p>合并分支时，如果可能，Git会用 <code>Fast forward</code> 模式，但这种模式下，删除分支后，会丢掉分支信息<br>强制禁用 <code>Fast forward</code> 模式，Git就会在 <code>merge</code> 时生成一个新的 <code>commit</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git merge --no-ff -m "merge with no-ff" dev</div></pre></td></tr></table></figure>
+<p><code>--no-ff</code> 表示禁用 Fast forward<br><code>-m</code> 把 commit 描述写进去</p>
+<h3 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h3><p>开发中，每个bug都可以通过一个新的临时分支来修复，修复后，合并分支，然后将临时分支删除。<br>当前正在分支上进行的工作还没有提交，需要先存起来。<br>Git还提供了 <code>stash</code> 功能，可以把当前工作现场<strong>储藏</strong>起来，等以后恢复现场后继续工作。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git stash</div></pre></td></tr></table></figure>
+<p>现在，用 <code>git status</code> 查看工作区，就是干净的。<br>然后再到 <code>master</code> 分支上创建分支，修改后和并，删除分支。</p>
+<p>回到之前的分支，查看 <code>stash</code> 列表</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git stash list</div></pre></td></tr></table></figure>
+<p>两种方法恢复,<code>git stash pop</code> 方法，自动删除 <code>stash</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git stash pop</div></pre></td></tr></table></figure>
+<p>还有一种就是先用 <code>git stash apply</code> 恢复，再删除 <code>stash</code> 内容。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git stash apply stash@&#123;0&#125;</div><div class="line">git stash drop</div></pre></td></tr></table></figure>
+<p>你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令 <code>git stash apply stash@{0}</code></p>
+<p>删除分支 <code>git branch -D &lt;name&gt;</code> 强行删除</p>
+<h3 id="远程分支"><a href="#远程分支" class="headerlink" title="远程分支"></a>远程分支</h3><p>当你从远程仓库克隆时，实际上Git自动把本地的 <code>master</code> 分支和远程的 <code>master</code> 分支对应起来了，并且，远程仓库的默认名称是 <code>origin</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git remot       #查看远程库的信息</div><div class="line">git remote -v   #显示更详细的信息 </div><div class="line">origin	https://github.com/AIxiuxiu/anna.git (fetch) #抓取地址</div><div class="line">origin	https://github.com/AIxiuxiu/anna.git (push)  #推送地址</div></pre></td></tr></table></figure>
+<p>推送分支<br>master分支 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>推送其他分支比如 <code>dev</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin dev</div></pre></td></tr></table></figure>
+<p>创建分支 <code>git checkout -b newbranch</code><br>将新的分支推送到 <code>github</code>  <code>git push origin newbranch</code></p>
+<p>抓取分支  <code>git checkout -b dev origin/dev</code><br>失败则需要建立本地分支和远程分支的关联</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch --set-upstream-to=origin/newbranch</div><div class="line">git pull</div></pre></td></tr></table></figure>
+<p>注：多人协作的工作模式通常是这样：</p>
+<blockquote>
+<p>首先，可以试图用git push origin branch-name推送自己的修改；</p>
+<p>如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；</p>
+<p>如果合并有冲突，则解决冲突，并在本地提交；</p>
+<p>没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！</p>
+<p>如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch –set-upstream branch-name origin/branch-name。</p>
+</blockquote>
+<h3 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h3><p>打标签 <code>git tag &lt;name&gt;</code> ，默认标签是打在当前分支上最新提交的commit上的<br>历史标签，找到历史提交的 <code>commit id</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git log --pretty=oneline --abbrev-commit</div><div class="line">git tag &lt;name&gt; commit_id #提交打标签</div></pre></td></tr></table></figure>
+<p>查看标签 <code>git tag</code><br>查看标签信息 <code>git show &lt;tagname&gt;</code></p>
+<p>创建带有说明的标签，用-a指定标签名，-m指定说明文字</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag -a &lt;标签名&gt; -m "说明文字" commit_id</div></pre></td></tr></table></figure>
+<p>删除标签 <code>git tag -d &lt;tagname&gt;</code></p>
+<p>推送某个标签到远程 <code>git push origin &lt;tagname&gt;</code></p>
+<p>一次性推送全部尚未推送到远程的本地标签 <code>git push origin --tags</code></p>
+<p>如果标签已经推送到远程，要删除远程标签就麻烦一点，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag -d &lt;tagname&gt;  #先从本地删除</div><div class="line">git push origin :refs/tags/&lt;tagname&gt;  #从远程删除</div></pre></td></tr></table></figure>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><h3 id="创建-SSH-公钥"><a href="#创建-SSH-公钥" class="headerlink" title="创建 SSH 公钥"></a>创建 SSH 公钥</h3><p>使用命令创建 <code>ssh-key</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C "youremail@example.com"</div></pre></td></tr></table></figure>
+<p>然后在用户主目录里找到 <code>.ssh</code> 目录，里面有 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 两个文件，这两个就是 <code>SSH Key</code> 的秘钥对，<code>id_rsa</code> 是私钥，不能泄露出去，<code>id_rsa.pub</code> 是公钥。<br>然后登陆 <code>GitHub</code>，打开 <code>Account settings</code>，<code>SSH Keys</code> 页面：<br>在 <code>Key</code> 文本框里粘贴 <code>id_rsa.pub</code> 文件的内容.</p>
+<p>可以使用 <code>ssh -T git@github.com</code> 测试是否连接成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div><div class="line">Hi yourName! You've successfully authenticated, but GitHub does not provide shell access.</div></pre></td></tr></table></figure>
+<h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><p>登陆 <code>GitHub</code>，然后，在右上角找到 <code>Create a new repository</code> 按钮<br>填写 <code>Repository name</code> 创建 <code>Create repository</code><br>新建本地仓库并关联</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">echo "# github" &gt;&gt; README.md</div><div class="line">git init</div><div class="line">git add README.md</div><div class="line">git commit -m "first commit"</div><div class="line">git remote add origin https://github.com/yourName/repositoryName.git</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
+<p>把一个已有的本地仓库与之关联</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add origin https://github.com/AIxiuxiu/anna.git</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
+<p>由于远程库是空的，我们第一次推送 <code>master</code> 分支时，加上了 <code>-u</code> 参数</p>
+<p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code> 或 <code>git push</code> 推送最新修改。</p>
+<h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><p>假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆<br>最好勾选 <code>Initialize this repository with a README</code>，<code>GitHub</code> 会自动为我们创建一个 <code>README.md</code> 文件，</p>
+<p>之后用命令 <code>git clone</code> 克隆一个本地库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/AIxiuxiu/anna.git</div></pre></td></tr></table></figure>
+<p><code>GitHub</code> 支持 <code>HTTPS</code> 和 <code>SSH</code> 协议(建议使用 <code>SSH</code> ，快一点)</p>
+<h3 id="Fork-项目"><a href="#Fork-项目" class="headerlink" title="Fork 项目"></a>Fork 项目</h3><p>首先在你要 <code>fork</code> 的项目点击 <code>fork</code> ，项目就会在你的空间中创建一个完全属于你的项目副本，但在你自己的计算机上并没有这个仓库的文件。使用 <code>clone</code> 把项目拷贝到本地。</p>
+<p>通过配置 <code>Git</code> 来同步你 <code>fork</code> 的原始项目，复制原始项目的仓库 URL，命令行到本地项目目录。<br>输入 <code>git remove -v</code>，按下回车键，你将会看到你的 fork 当前配置的远程仓库：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote -v</div><div class="line">origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)</div><div class="line">origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)</div></pre></td></tr></table></figure>
+<p>输入 <code>git remote add upstream &lt;URL&gt;</code> <code>URL</code> 原项目地址。再次输入 git remote -v。你将会看到你 <code>fork</code> 的 <code>URL</code> 作为原始的地址，而原始的仓库的 <code>URL</code> 作为 <code>upstream</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git</div><div class="line">git remote -v</div><div class="line">origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)</div><div class="line">origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)</div><div class="line">upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)</div><div class="line">upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)</div></pre></td></tr></table></figure>
+<p>从上游仓库 <code>fetch</code> 分支和提交点，提交给本地 <code>master</code>，并会被存储在一个本地分支 <code>upstream/master</code><br>切换到本地主分支(如果不在) <code>git checkout master</code><br>把 <code>upstream/master</code> 分支合并到本地 <code>master</code> 上，这样就完成了同步，并且不会丢掉本地修改的内容。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git fetch upstream</div><div class="line">git checkout master</div><div class="line">git merge upstream/master</div></pre></td></tr></table></figure>
+<p>接着就是熟悉的推送本地仓库到远程仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>其他<br><code>github</code> 上最新和最酷的东西 <a href="https://github.com/explore" target="_blank" rel="external">Explore GitHub</a><br><code>github</code> 教程 <a href="https://github.com/gotgit/gotgithub" target="_blank" rel="external">gotgithub</a></p>
+<h3 id="忽略特殊文件"><a href="#忽略特殊文件" class="headerlink" title="忽略特殊文件"></a>忽略特殊文件</h3><p>需要.gitignore文件<br>所有配置文件可以直接在线浏览：<a href="https://github.com/github/gitignore" target="_blank" rel="external">https://github.com/github/gitignore</a></p>
+<p>加一个文件到Git，但发现添加不了，原因是这个文件被.gitignore忽略了,如忽略 <code>class</code> 文件。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add App.class</div><div class="line">The following paths are ignored by one of your .gitignore files:</div><div class="line">App.class</div><div class="line">Use -f if you really want to add them.</div></pre></td></tr></table></figure>
+<p>可以用-f强制添加到Git：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add -f App.class</div></pre></td></tr></table></figure>
+<p>可能是.gitignore写得有问题，需要找出来到底哪个规则写错了，可以用git check-ignore命令检查：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git check-ignore -v App.class</div><div class="line">.gitignore:3:*.class    App.class</div></pre></td></tr></table></figure>
+<h2 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h2><p>只需要敲一行命令，告诉Git，以后 <code>st</code> 就表示 <code>status</code>，如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git config --global alias.st status</div><div class="line">git config --global alias.co checkout</div><div class="line">git config --global alias.ci commit</div><div class="line">git config --global alias.br branch</div></pre></td></tr></table></figure>
+<p>把暂存区的修改撤销掉（unstage）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global alias.unstage 'reset HEAD'</div></pre></td></tr></table></figure>
+<p>配置一个git last，让其显示最后一次提交信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global alias.last 'log -1'</div></pre></td></tr></table></figure>
+<p>配置lg</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit"</div></pre></td></tr></table></figure>
+<p>加上 <code>--global</code> 是针对当前用户起作用的,如果不加，那只针对当前的仓库起作用。</p>
+<p>每个仓库的Git配置文件都放在 <code>.git/config</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">cat .git/config</div><div class="line">[core]</div><div class="line">    repositoryformatversion = 0</div><div class="line">    filemode = true</div><div class="line">    bare = false</div><div class="line">    logallrefupdates = true</div><div class="line">    ignorecase = true</div><div class="line">    precomposeunicode = true</div><div class="line">[remote "origin"]</div><div class="line">    url = git@github.com:michaelliao/learngit.git</div><div class="line">    fetch = +refs/heads/*:refs/remotes/origin/*</div><div class="line">[branch "master"]</div><div class="line">    remote = origin</div><div class="line">    merge = refs/heads/master</div><div class="line">[alias]</div><div class="line">    last = log -1</div></pre></td></tr></table></figure>
+<p>别名就在 <code>[alias]</code> 后面，要删除别名，直接把对应的行删掉即可</p>
+<p>而当前用户的 <code>Git</code> 配置文件放在用户主目录下的一个隐藏文件 <code>.gitconfig</code> 中</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;修改AppStore中的公司名称&quot;&gt;&lt;a href=&quot;#修改AppStore中的公司名称&quot; class=&quot;headerlink&quot; title=&quot;修改AppStore中的公司名称&quot;&gt;&lt;/a&gt;修改AppStore中的公司名称&lt;/h1&gt;&lt;p&gt;##代理人(agent)&lt;br&gt;苹果客服必须确认你是&lt;strong&gt;苹果开发者账号代理人&lt;/strong&gt;，才会给你修改。&lt;br&gt;如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 &lt;code&gt;Developer&lt;/code&gt; 打开 &lt;code&gt;Membership&lt;/code&gt; 就能看见代理人是谁。&lt;br&gt;
+      &lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h1&gt;&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;Mac&lt;/code&gt; 上安装 &lt;code&gt;Git&lt;/code&gt; 有多种方式。 最简单的方法是安装 &lt;code&gt;Xcode Command Line Tools&lt;/code&gt;。 &lt;code&gt;Mavericks （10.9&lt;/code&gt;） 或更高版本的系统中，在 &lt;code&gt;Terminal&lt;/code&gt; 里尝试首次运行 &lt;code&gt;git&lt;/code&gt; 命令即可。 如果没有安装过命令行开发者工具，将会提示你安装。&lt;/p&gt;
+&lt;p&gt;使用图形化的 Git 安装工具,&lt;a href=&quot;https://git-scm.com/download/mac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装完成之后就是开始使用了，&lt;code&gt;git&lt;/code&gt; 有两种使用方式 &lt;strong&gt;GUI&lt;/strong&gt; 和 &lt;strong&gt;命令行&lt;/strong&gt;。&lt;br&gt;使用 &lt;code&gt;GUI&lt;/code&gt; 可以去&lt;a href=&quot;https://git-scm.com/downloads/guis&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git提供的GUI&lt;/a&gt;中选择，下面主要介绍命令行的使用方法。&lt;br&gt;
     
     </summary>
     
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
     
     
-      <category term="ios" scheme="http://yoursite.com/tags/ios/"/>
-    
-      <category term="AppStore" scheme="http://yoursite.com/tags/AppStore/"/>
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
@@ -65,7 +228,7 @@
     <link href="http://yoursite.com/iOS/%E4%BF%AE%E6%94%B9AppStore%E4%B8%AD%E7%9A%84%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0/"/>
     <id>http://yoursite.com/iOS/修改AppStore中的公司名称/</id>
     <published>2017-06-06T06:36:02.000Z</published>
-    <updated>2017-07-07T09:34:32.000Z</updated>
+    <updated>2017-07-10T00:55:16.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="修改AppStore中的公司名称"><a href="#修改AppStore中的公司名称" class="headerlink" title="修改AppStore中的公司名称"></a>修改AppStore中的公司名称</h1><p>##代理人(agent)<br>苹果客服必须确认你是<strong>苹果开发者账号代理人</strong>，才会给你修改。<br>如果你不知道这个代理人是谁，或者这个代理人已经离职，而你拥有这个开发者账号和密码，那么登陆 <code>Developer</code> 打开 <code>Membership</code> 就能看见代理人是谁。<br><img src="media/14994164482452/agent.png" alt="agent"></p>
 <p>如果已经离职，你可以修改代理人信息，但是还要和代理人认证，所以直接对苹果客服声称自己就是代理人就即可。也可以添加管理员然后更换代理人。</p>
@@ -88,6 +251,7 @@
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">您好：</div><div class="line"></div><div class="line">我们负责跟进您对于更新帐户中所示公司名称的请求。</div><div class="line"></div><div class="line">关于您的请求，我们需要更进一步的信息。我已经开通您的上传功能。</div><div class="line">请您尝试使用以下的链接上传贵公司的营业执照以及公司变更名称证明：</div><div class="line"></div><div class="line">https://developer.apple.com/contact/file-upload/</div><div class="line"></div><div class="line">我们建议您使用 Apple 的 Safari 浏览器。请注意档案大小不可超过 5MB。</div><div class="line">我们接受以下档案类型：JPG、PNG、TIFF、以及 PDF。</div><div class="line"></div><div class="line">上传后请您回复此邮件。</div><div class="line"></div><div class="line">请使用 Safari 浏览器来上载您的文件。</div><div class="line"></div><div class="line">若您只是需要更新您的英文公司名称，请直接联系 Dun &amp; Bradstreet (D&amp;B)，并请求更新您的 D&amp;B 档案：</div><div class="line"></div><div class="line">Dun &amp; Bradstreet 全球支持部门</div><div class="line"></div><div class="line">appdeveloper@dnb.com</div><div class="line"></div><div class="line">在他们确认已更新您的英文公司名称后，请回复此电子邮件。</div><div class="line"></div><div class="line">请注意，我们最长可能需要 14 个工作日才能从 D&amp;B 收到更新后的公司名称并在我们的系统中进行更新。</div><div class="line"></div><div class="line">如果您有任何问题或需要进一步的帮助，欢迎与我们联系。</div><div class="line">我们的办公时间是北京时间周一至周五，09:00 至 17:00，电话号码是 4006 701 855。</div><div class="line">当您来电时请告知我们案例编号: 10000000000 以便我们可以快速的找到您的申请。</div></pre></td></tr></table></figure>
 <p>上传证明之后一两天就会把公司名称改过来。</p>
 <p>看到这好像更改英文名称只需要联系邓白氏，更改 appstore 里的中文名称才需要联系苹果开发者。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.jianshu.com/p/1d2262f69a6a" target="_blank" rel="external">如何修改AppStore中的公司名称</a></p>
 ]]></content>
     
     <summary type="html">
