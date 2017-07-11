@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://yoursite.com/other/git/</loc>
-    <lastmod>2017-07-11T09:20:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>git</title>
-        <pubTime>2017-06-06T13:10:00.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/iOS/%E4%BF%AE%E6%94%B9AppStore%E4%B8%AD%E7%9A%84%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0/</loc>
-    <lastmod>2017-07-10T00:55:16.000Z</lastmod>
+    <lastmod>2017-07-11T09:28:16.000Z</lastmod>
     <data>
         <display>
         <title>修改AppStore中的公司名称</title>
@@ -39,6 +19,26 @@
            
              
               <breadCrumb title="iOS" url="http://yoursite.com/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/other/git/</loc>
+    <lastmod>2017-07-11T09:20:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>git</title>
+        <pubTime>2017-06-06T13:10:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
           
         </display>
     </data>
@@ -193,19 +193,4 @@
 
     
     
-    
-  <url>
-    <loc>http://yoursite.com/other/media/14985269330870/README/</loc>
-    <lastmod>2017-06-27T06:11:36.000Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2017-06-27T06:11:36.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
