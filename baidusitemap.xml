@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://yoursite.com/java/Spring+Mybatis%20%E5%A4%9A%E4%B8%AA%E6%95%B0%E6%8D%AE%E6%BA%90/</loc>
+    <lastmod>2017-07-12T02:50:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>Spring+Mybatis 多个数据源</title>
+        <pubTime>2017-06-09T08:31:34.000Z</pubTime>
+        
+        <tag>Spring</tag>
+         
+        <tag>Mybatis</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/other/git/</loc>
+    <lastmod>2017-07-11T09:38:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>git</title>
+        <pubTime>2017-06-06T13:10:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/iOS/%E4%BF%AE%E6%94%B9AppStore%E4%B8%AD%E7%9A%84%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0/</loc>
     <lastmod>2017-07-11T09:35:14.000Z</lastmod>
     <data>
@@ -19,26 +61,6 @@
            
              
               <breadCrumb title="iOS" url="http://yoursite.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/other/git/</loc>
-    <lastmod>2017-07-11T09:20:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>git</title>
-        <pubTime>2017-06-06T13:10:00.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://yoursite.com/categories/mac/"/>
           
         </display>
     </data>
