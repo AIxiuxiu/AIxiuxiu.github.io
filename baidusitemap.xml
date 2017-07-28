@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/java/tomcat/</loc>
+    <lastmod>2017-07-28T01:37:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>tomcat</title>
+        <pubTime>2017-06-28T02:31:34.000Z</pubTime>
+        
+        <tag>tomcat</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/win/cmder/</loc>
     <lastmod>2017-07-28T01:26:18.000Z</lastmod>
     <data>
@@ -122,26 +142,6 @@
         <tag>Spring</tag>
          
         <tag>Mybatis</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/java/tomcat/</loc>
-    <lastmod>2017-07-28T01:25:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>tomcat</title>
-        <pubTime>2017-06-28T02:31:34.000Z</pubTime>
-        
-        <tag>tomcat</tag>
          
          
            
