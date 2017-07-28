@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-28T01:40:05.000Z</updated>
+  <updated>2017-07-28T02:16:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/java/tomcat/"/>
     <id>http://yoursite.com/java/tomcat/</id>
     <published>2017-06-28T02:31:34.000Z</published>
-    <updated>2017-07-28T01:40:05.000Z</updated>
+    <updated>2017-07-28T02:16:06.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="tomcat"><a href="#tomcat" class="headerlink" title="tomcat"></a>tomcat</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="http://tomcat.apache.org" target="_blank" rel="external">下载地址</a><br>将 <code>tomcat</code> 文件夹复制到 <code>/Library</code> 目录下,然后修改权限</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod 755 /Library/tomcat</div></pre></td></tr></table></figure>
@@ -104,7 +104,7 @@
 </blockquote>
 <p>打开 <code>~/.bash_profile</code> 文件（zsh 打开<code>~/.zshrc</code> ），添加如下内容</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 设置 JDK 6</span></div><div class="line">export JAVA_6_HOME=`/usr/libexec/java_home -v 1.6` </div><div class="line"><span class="meta">#</span><span class="bash"> 设置 JDK 7 </span></div><div class="line">export JAVA_7_HOME=`/usr/libexec/java_home -v 1.7` </div><div class="line"><span class="meta">#</span><span class="bash"> 设置 JDK 8 </span></div><div class="line">export JAVA_8_HOME=`/usr/libexec/java_home -v 1.8`</div><div class="line"><span class="meta"> #</span><span class="bash">默认JDK 7 </span></div><div class="line">export JAVA_HOME=$JAVA_7_HOME </div><div class="line"><span class="meta">#</span><span class="bash"><span class="built_in">alias</span>命令动态切换JDK版本 </span></div><div class="line">alias jdk6="export JAVA_HOME=$JAVA_6_HOME” </div><div class="line">alias jdk7="export JAVA_HOME=$JAVA_7_HOME” </div><div class="line">alias jdk8="export JAVA_HOME=$JAVA_8_HOME"</div></pre></td></tr></table></figure>
-<h2 id="tomcat报错解决"><a href="#tomcat报错解决" class="headerlink" title="tomcat报错解决"></a>tomcat报错解决</h2><p>启动失败，在 <code>catalina.2017-06-28.log</code> 报如下面的错误</p>
+<h3 id="tomcat报错解决"><a href="#tomcat报错解决" class="headerlink" title="tomcat报错解决"></a>tomcat报错解决</h3><p>启动失败，在 <code>catalina.2017-06-28.log</code> 报如下面的错误</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">org.apache.catalina.core.StandardContext.startInternal Context [/hello] startup failed due to previous errors</div></pre></td></tr></table></figure>
 <p>这个时候此应用就启动失败了，访问会出现404错误。但是日志里面也没有写具体是什么问题导致启动失败，对调试带来了一些困难，下面是解决方法：<br>在 <code>tomcat</code> 的 <code>conf/loggings.properties</code> 文件或者该应用的 <code>WEB-INF/classes</code> 目录中新建一个 <code>loggings.properties</code> 文件，再加上以下两句：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">org.apache.catalina.core.ContainerBase.[Catalina].level = INFO</div><div class="line">org.apache.catalina.core.ContainerBase.[Catalina].handlers = </div><div class="line">java.util.logging.ConsoleHandler</div></pre></td></tr></table></figure>
