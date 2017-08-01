@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/java/Mybatis/</loc>
+    
+    <lastmod>2017-08-01T01:20:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/java/tomcat/</loc>
     
     <lastmod>2017-07-28T02:16:06.000Z</lastmod>

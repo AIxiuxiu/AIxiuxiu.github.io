@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/java/Mybatis/</loc>
+    <lastmod>2017-08-01T01:20:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mybatis</title>
+        <pubTime>2017-07-02T09:12:30.000Z</pubTime>
+        
+        <tag>Mybatis</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/java/tomcat/</loc>
     <lastmod>2017-07-28T02:16:06.000Z</lastmod>
     <data>
