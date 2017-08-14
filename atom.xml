@@ -197,6 +197,51 @@
   </entry>
   
   <entry>
+    <title>优化 ipa</title>
+    <link href="http://yoursite.com/iOS/%E4%BC%98%E5%8C%96%20ipa%20%E5%AE%89%E8%A3%85%E5%8C%85/"/>
+    <id>http://yoursite.com/iOS/优化 ipa 安装包/</id>
+    <published>2017-07-02T02:31:34.000Z</published>
+    <updated>2017-08-14T09:36:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="优化-ipa-安装包"><a href="#优化-ipa-安装包" class="headerlink" title="优化 ipa 安装包"></a>优化 ipa 安装包</h1><p>下面介绍了 <code>iOS</code> 优化 <code>ipa</code> 安装包大小的几种方法。</p>
+<h2 id="配置编译选项"><a href="#配置编译选项" class="headerlink" title="配置编译选项"></a>配置编译选项</h2><h3 id="Generate-Debug-Symbols"><a href="#Generate-Debug-Symbols" class="headerlink" title="Generate Debug Symbols"></a>Generate Debug Symbols</h3><p><code>Generate Debug Symbols</code> 这个设置在 <code>Debug</code> 和 <code>Release</code> 下 均默认为 YES。<br>当 <code>Generate Debug Symbols</code> 设置为 <code>Yes</code> 时，编译产生的 <code>.o</code> 文件会大一些，当然最终生成的可执行文件也大一些。<br>当 <code>Generate Debug Symbols</code> 设置为 <code>No</code> 的时候，在 <code>Xcode</code> 中设置的断点不会中断，同样生成的 <code>ipa</code> 安装包也会小一些。<br><a id="more"></a><br><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.36.43.png" alt="屏幕快照 2017-08-14 下午4.36.43"></p>
+<h3 id="舍弃架构armv7"><a href="#舍弃架构armv7" class="headerlink" title="舍弃架构armv7"></a>舍弃架构armv7</h3><p>armv7用于支持4s和4，4s是2011年11月正式上线，虽然还有小部分人在使用，但是追求包体大小的完全可以舍弃了。<br><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.44.52.png" alt="屏幕快照 2017-08-14 下午4.44.52"></p>
+<h3 id="Dead-Code-Stripping"><a href="#Dead-Code-Stripping" class="headerlink" title="Dead Code Stripping"></a>Dead Code Stripping</h3><p><code>build setting</code> 里 <code>DEAD_CODE_STRIPPING</code> = <code>YES</code>（默认就是 <code>YES</code> ）。 确定 <code>dead code</code>（代码被定义但从未被调用）被剥离，去掉冗余的代码，即使一点冗余代码，编译后体积也是很可观的。<br><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.33.30.png" alt="屏幕快照 2017-08-14 下午4.33.30"></p>
+<h3 id="编译器优化级别"><a href="#编译器优化级别" class="headerlink" title="编译器优化级别"></a>编译器优化级别</h3><p><code>Build Settings</code> -&gt; <code>Optimization Level</code> 有几个编译优化选项，<code>release</code> 版应该选择 <code>Fastest, Smalllest[-Os]</code>，这个选项会开启那些不增加代码大小的全部优化，并让可执行文件尽可能小。</p>
+<p><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.35.55.png" alt="屏幕快照 2017-08-14 下午4.35.55"></p>
+<h3 id="去除符号信息"><a href="#去除符号信息" class="headerlink" title="去除符号信息"></a>去除符号信息</h3><p><code>Strip Debug Symbols During Copy</code> 和 <code>Symbols Hidden by Default</code> 在<code>release</code> 版本应该设为 <code>yes</code>，可以去除不必要的调试符号。<br><code>Symbols Hidden by Default</code> 会把所有符号都定义成”private extern”，设了后会减小体积。</p>
+<p><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.39.09.png" alt="屏幕快照 2017-08-14 下午4.39.09"><br><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.39.34.png" alt="屏幕快照 2017-08-14 下午4.39.34"></p>
+<h3 id="Strip-Linked-Product"><a href="#Strip-Linked-Product" class="headerlink" title="Strip Linked Product"></a>Strip Linked Product</h3><p>DEBUG下设为NO，RELEASE下设为YES，用于RELEASE模式下缩减app的大小<br><img src="http://oimhz3xpl.bkt.clouddn.com/屏幕快照 2017-08-14 下午4.42.57.png" alt="屏幕快照 2017-08-14 下午4.42.57"></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="去除无用的三方库、代码、readme"><a href="#去除无用的三方库、代码、readme" class="headerlink" title="去除无用的三方库、代码、readme"></a>去除无用的三方库、代码、readme</h3><p>删除项目中无用的文件，如被弃用的类、第三方库等，有些文件在项目中文件中，但是没有添加到项目中，这时需要到项目文件中去看。我就有很多添加到项目中却没使用的文件。</p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>1.将图片加入到 <code>Assets.xcassets</code> 中。打包后在 <code>ipa</code> 中会生成 <code>Assets.car</code> 文件来存储 <code>Assets.xcassets</code> 中的图片，并且文件大小方面也大大降低。</p>
+<p>2.删除不需要的图片<br>查找 iOS 工程无用图片资源工具 <a href="https://github.com/tinymind/LSUnusedResources" target="_blank" rel="external">LSUnusedResources</a></p>
+<p>使用方法</p>
+<blockquote>
+<p>点击 Browse.. 选择一个文件夹；<br>点击 Search 开始搜索；<br>等待片刻即可看到结果。</p>
+</blockquote>
+<p>3.压缩图片<br>基于Mac的图像“瘦身”软件 <a href="https://imageoptim.com/" target="_blank" rel="external">imageoptim</a></p>
+<p>一些比较大体积的背景图片压缩成.jpg格式, <code>imageoptim</code> 可优化jpg格式的图片</p>
+<p>因为 <code>xcode</code> 里的工程配置，<code>Compress PNG Files</code> 是 <code>YES</code> 的，会对 <code>png</code> 的图片进行压缩，这时使用 <code>imageoptim</code> 压缩之后，不会减小 <code>ipa</code> 大小。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.jianshu.com/p/a49d59b01669" target="_blank" rel="external">iOS 优化ipa包，减小安装包大小</a><br><a href="http://www.jianshu.com/p/a72d03e92c80" target="_blank" rel="external">ipa文件“减肥”初探</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;优化-ipa-安装包&quot;&gt;&lt;a href=&quot;#优化-ipa-安装包&quot; class=&quot;headerlink&quot; title=&quot;优化 ipa 安装包&quot;&gt;&lt;/a&gt;优化 ipa 安装包&lt;/h1&gt;&lt;p&gt;下面介绍了 &lt;code&gt;iOS&lt;/code&gt; 优化 &lt;code&gt;ipa&lt;/code&gt; 安装包大小的几种方法。&lt;/p&gt;
+&lt;h2 id=&quot;配置编译选项&quot;&gt;&lt;a href=&quot;#配置编译选项&quot; class=&quot;headerlink&quot; title=&quot;配置编译选项&quot;&gt;&lt;/a&gt;配置编译选项&lt;/h2&gt;&lt;h3 id=&quot;Generate-Debug-Symbols&quot;&gt;&lt;a href=&quot;#Generate-Debug-Symbols&quot; class=&quot;headerlink&quot; title=&quot;Generate Debug Symbols&quot;&gt;&lt;/a&gt;Generate Debug Symbols&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Generate Debug Symbols&lt;/code&gt; 这个设置在 &lt;code&gt;Debug&lt;/code&gt; 和 &lt;code&gt;Release&lt;/code&gt; 下 均默认为 YES。&lt;br&gt;当 &lt;code&gt;Generate Debug Symbols&lt;/code&gt; 设置为 &lt;code&gt;Yes&lt;/code&gt; 时，编译产生的 &lt;code&gt;.o&lt;/code&gt; 文件会大一些，当然最终生成的可执行文件也大一些。&lt;br&gt;当 &lt;code&gt;Generate Debug Symbols&lt;/code&gt; 设置为 &lt;code&gt;No&lt;/code&gt; 的时候，在 &lt;code&gt;Xcode&lt;/code&gt; 中设置的断点不会中断，同样生成的 &lt;code&gt;ipa&lt;/code&gt; 安装包也会小一些。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+    
+    
+      <category term="ios" scheme="http://yoursite.com/tags/ios/"/>
+    
+      <category term="ipa" scheme="http://yoursite.com/tags/ipa/"/>
+    
+  </entry>
+  
+  <entry>
     <title>tomcat</title>
     <link href="http://yoursite.com/java/tomcat/"/>
     <id>http://yoursite.com/java/tomcat/</id>
