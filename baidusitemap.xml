@@ -4,12 +4,52 @@
 
     
   <url>
+    <loc>http://yoursite.com/other/screen%20%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-08-25T01:45:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>Screen 命令</title>
+        <pubTime>2017-07-12T04:31:34.000Z</pubTime>
+        
+        <tag>screen</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://yoursite.com/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/other/%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2017-08-25T01:45:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>搜索技巧</title>
+        <pubTime>2017-07-23T10:31:34.000Z</pubTime>
+        
+        <tag>搜索</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://yoursite.com/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/iOS/%E4%BC%98%E5%8C%96%20ipa%20%E5%AE%89%E8%A3%85%E5%8C%85/</loc>
-    <lastmod>2017-08-14T09:36:21.000Z</lastmod>
+    <lastmod>2017-08-14T09:44:23.000Z</lastmod>
     <data>
         <display>
         <title>优化 ipa</title>
-        <pubTime>2017-07-02T02:31:34.000Z</pubTime>
+        <pubTime>2017-07-05T03:30:34.000Z</pubTime>
         
         <tag>ios</tag>
          
