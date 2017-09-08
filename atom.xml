@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-25T01:45:37.000Z</updated>
+  <updated>2017-09-08T06:19:33.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,101 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PDB 调试Python代码</title>
+    <link href="http://yoursite.com/python/PDB%20%E8%B0%83%E8%AF%95Python%E4%BB%A3%E7%A0%81/"/>
+    <id>http://yoursite.com/python/PDB 调试Python代码/</id>
+    <published>2017-08-02T04:31:34.000Z</published>
+    <updated>2017-09-08T06:19:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="PDB-调试Python代码"><a href="#PDB-调试Python代码" class="headerlink" title="PDB 调试Python代码"></a>PDB 调试Python代码</h1><p>##Sublime Text<br>使用 <code>sublime</code> 开发 <code>Python</code> 需要插件 <code>Anaconda</code> (Python代码自动补全、PEP8格式化) 和 <code>SublimeREPL</code> (Python代码交互式解释器)</p>
+<p>Anaconda 用户配置</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    //忽略各种空格不对, 超过80字, import的函数没有使用的提醒</div><div class="line">    "pep8_ignore": ["E501", "W292", "E303", "W391", "E225", "E302", "W293", "E402"],</div><div class="line">    "pyflakes_explicit_ignore":</div><div class="line">    [</div><div class="line">        "UnusedImport"</div><div class="line">    ],</div><div class="line">    //保存文件后自动pep8格式化</div><div class="line">    "auto_formatting": true,</div><div class="line">    //库函数的提示</div><div class="line">    "enable_signatures_tooltip": true,</div><div class="line">    "merge_signatures_and_doc":true,</div><div class="line">    //禁止代码分析检查</div><div class="line">    "anaconda_linting": false,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>SublimeREPL 快捷键设置<br>根据 Preferences–&gt;Browse Packages–&gt;SublimeREPL–&gt;config–&gt;Python–&gt;Default.sublime-commands 文件在<strong>按键绑定-用户</strong>中添加快捷键    </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">      //按F5执行Python编译</div><div class="line">      "keys":["f5"],</div><div class="line">      "caption": "SublimeREPL: Python - RUN current file",</div><div class="line">      "command": "run_existing_window_command", "args":</div><div class="line">      &#123;</div><div class="line">          "id": "repl_python_run",</div><div class="line">          "file": "config/Python/Main.sublime-menu"</div><div class="line">      &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">      //按F6打开Python交互式窗口</div><div class="line">      "keys":["f6"],</div><div class="line">      "caption": "SublimeREPL: Python",</div><div class="line">      "command": "run_existing_window_command", "args":</div><div class="line">      &#123;</div><div class="line">          "id": "repl_python",</div><div class="line">          "file": "config/Python/Main.sublime-menu"</div><div class="line">      &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">      //按F7执行当前Python代码片段编译</div><div class="line">      "keys":["f7"],</div><div class="line">      "caption": "SublimeREPL: Python - PDB current file",</div><div class="line">      "command": "run_existing_window_command", "args":</div><div class="line">      &#123;</div><div class="line">          "id": "repl_python_pdb",</div><div class="line">          "file": "config/Python/Main.sublime-menu"</div><div class="line">      &#125;</div><div class="line">  &#125;,</div><div class="line">]</div></pre></td></tr></table></figure>
+<p><code>SublimeREPL</code> 和 <code>Editor</code> 各占一个标签，为了方便查看，可点击 视图–&gt;布局–&gt;行：2 即可。</p>
+<h2 id="pdb"><a href="#pdb" class="headerlink" title="pdb"></a>pdb</h2><p>pdb 是 python 自带的一个包，为 python 程序提供了一种交互的源代码调试功能，主要特性包括设置断点、单步调试、进入函数调试、查看当前代码、查看栈片段、动态改变变量的值等。pdb 提供了一些常用的调试命令:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break 或 b</td>
+<td>设置断点</td>
+</tr>
+<tr>
+<td>continue 或 c</td>
+<td>继续执行程序</td>
+</tr>
+<tr>
+<td>list 或 l</td>
+<td>查看当前行的代码段</td>
+</tr>
+<tr>
+<td>step 或 s</td>
+<td>进入函数</td>
+</tr>
+<tr>
+<td>return 或 r</td>
+<td>执行代码直到从当前函数返回</td>
+</tr>
+<tr>
+<td>exit 或 q</td>
+<td>中止并退出</td>
+</tr>
+<tr>
+<td>next 或 n</td>
+<td>执行下一行</td>
+</tr>
+<tr>
+<td>p</td>
+<td>打印变量的值</td>
+</tr>
+<tr>
+<td>help</td>
+<td>帮助</td>
+</tr>
+</tbody>
+</table>
+<p>基本用法<br>导入 <code>pdb</code>，添加 <code>pdb.set_trace()</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">import pdb</div><div class="line">def sum(x, y):</div><div class="line">    return x + y</div><div class="line">a = 1</div><div class="line">pdb.set_trace()</div><div class="line">b = 2</div><div class="line">c = sum(a, b)</div><div class="line">print(c)</div></pre></td></tr></table></figure>
+<p>F5 运行 会在代码 <code>b = 2</code> 处停下，如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; /Users/youname/python/test.py(8)&lt;module&gt;()</div><div class="line">-&gt; b = 2</div><div class="line">(Pdb)</div></pre></td></tr></table></figure>
+<p>n执行下一条语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; /Users/youname/python/test.py(9)&lt;module&gt;()</div><div class="line">-&gt; print(a + b)</div><div class="line">(Pdb)</div></pre></td></tr></table></figure>
+<p>备注：再按下回车会执行之前的命令语句。</p>
+<p><code>p</code> 命令打印变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(Pdb) p a</div><div class="line">1</div></pre></td></tr></table></figure>
+<p><code>l</code> 查看当前代码所调试在的位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">(Pdb) l</div><div class="line">  7  	def sum(x, y):</div><div class="line">  8  	    return x + y</div><div class="line">  9  	a = 1</div><div class="line"> 10  	pdb.set_trace()</div><div class="line"> 11  	b = 2</div><div class="line"> 12  -&gt;	c = sum(a, b)</div><div class="line"> 13  	print(c)</div><div class="line">[EOF]</div></pre></td></tr></table></figure>
+<p>箭头所指向的位置就是当前调试的位置。</p>
+<p>进入函数<br>输入 <code>n</code> 会直接执行函数的不会进入函数内部，在调试有函数语句的地方直接输入 <code>s</code>,可进入函数进行单步调试。输入 <code>r</code> 执行到当前函数返回，在执行 <code>r</code> 或 <code>n</code> 退出当前函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">(Pdb) s</div><div class="line">--Call--</div><div class="line">&gt; /Users/xayq-fanxl/anna/python/first.py(7)sum()</div><div class="line">-&gt; def sum(x, y):</div><div class="line">(Pdb) r</div><div class="line">--Return--</div><div class="line">&gt; /Users/xayq-fanxl/anna/python/first.py(8)sum()-&gt;3</div><div class="line">-&gt; return x + y</div><div class="line">(Pdb) </div><div class="line">&gt; /Users/xayq-fanxl/anna/python/first.py(13)&lt;module&gt;()</div><div class="line">-&gt; print(c)</div></pre></td></tr></table></figure>
+<p>调试中改变变量的值<br>!变量名可以改变调试的变量值，如下将 <code>c</code> 的值给变，正常运行打印结果为3，改变值之后打印为修改的结果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(Pdb) !c = 4</div><div class="line">(Pdb) n</div><div class="line">4</div></pre></td></tr></table></figure>
+<p>退出调试，使用 <code>quit</code> 或者 <code>q</code> 可以退出当前的 Pdb，但是这会以一种非常粗鲁的方式退出程序，其结果是直接 crash。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">(Pdb) q</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;test.py&quot;, line 11, in &lt;module&gt;</div><div class="line">    b = 2</div><div class="line">  File &quot;test.py&quot;, line 11, in &lt;module&gt;</div><div class="line">    b = 2</div><div class="line">  File &quot;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py&quot;, line 49, in trace_dispatch</div><div class="line">    return self.dispatch_line(frame)</div><div class="line">  File &quot;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py&quot;, line 68, in dispatch_line</div><div class="line">    if self.quitting: raise BdbQuit</div><div class="line">bdb.BdbQuit</div><div class="line"></div><div class="line">***Repl Closed***</div></pre></td></tr></table></figure>
+<p>停止调试继续执行程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(Pdb) c</div><div class="line">3</div><div class="line"></div><div class="line">***Repl Closed***</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;PDB-调试Python代码&quot;&gt;&lt;a href=&quot;#PDB-调试Python代码&quot; class=&quot;headerlink&quot; title=&quot;PDB 调试Python代码&quot;&gt;&lt;/a&gt;PDB 调试Python代码&lt;/h1&gt;&lt;p&gt;##Sublime Text&lt;br&gt;使用 &lt;
+    
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>搜索技巧</title>
