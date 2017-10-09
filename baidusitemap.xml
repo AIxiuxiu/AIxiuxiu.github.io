@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://yoursite.com/java/Spring%20MVC%20%E4%BC%A0%E5%80%BC/</loc>
+    <lastmod>2017-10-09T01:35:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>Spring MVC 传值</title>
+        <pubTime>2017-09-11T07:30:01.000Z</pubTime>
+        
+        <tag>SpringMVC</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/java/%E7%BC%96%E7%A0%81%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2017-10-09T01:09:28.000Z</lastmod>
+    <data>
+        <display>
+        <title>编码总结</title>
+        <pubTime>2017-09-01T02:31:34.000Z</pubTime>
+        
+        <tag>编码</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/java/%20mysql%E4%BD%BF%E7%94%A8utf8mb4/</loc>
     <lastmod>2017-09-08T09:20:49.000Z</lastmod>
     <data>
