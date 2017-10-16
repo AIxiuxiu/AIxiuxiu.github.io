@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-09T01:35:16.000Z</updated>
+  <updated>2017-10-16T07:48:51.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信机器人 wxpy</title>
+    <link href="http://yoursite.com/python/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%20wxpy/"/>
+    <id>http://yoursite.com/python/微信机器人 wxpy/</id>
+    <published>2017-09-23T02:31:34.000Z</published>
+    <updated>2017-10-16T07:48:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="微信机器人-wxpy"><a href="#微信机器人-wxpy" class="headerlink" title="微信机器人 wxpy"></a>微信机器人 wxpy</h1><p>最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 <code>wxpy</code> python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 github ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人<br><a id="more"></a><br>因为一些功能需要使用新内核分支 <code>new-core</code> 来完成，所以需要安装新内核分支 <code>new-core</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install -U git+https://github.com/youfou/wxpy.git@new-core</div></pre></td></tr></table></figure>
+<p>其它用到的库安装有如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> psutil</div><div class="line">pip install psutil</div><div class="line"><span class="meta">#</span> requests</div><div class="line">pip install requests</div><div class="line"><span class="meta">#</span> lxml</div><div class="line">pip install lxml</div></pre></td></tr></table></figure>
+<p>要想运行机器人需要一些配置必须正确</p>
+<ul>
+<li>账号昵称：bot_name</li>
+<li>管理者名称： admins_name</li>
+<li>管理群名称：admin_group_name</li>
+<li>需要管理的群名称：group_name</li>
+<li>名片的微信id 和 名称：card_wxid, card_name</li>
+</ul>
+<p>配置完成就可以启动自己的微信机器人了。因为有些功能虽然写了，但因为被封所以没能测试完，请自行测试，如果有问题可以告诉我进行更改。</p>
+<p>如果觉得 wxpy 有用请给作者<a href="https://github.com/youfou/wxpy" target="_blank" rel="external">star</a><br>参考文档（当前是新分支，文档只能进行参考）<a href="http://wxpy.readthedocs.io/zh/latest/chats.html#id8" target="_blank" rel="external">wxpy文档</a><br>参考代码 <a href="https://gist.github.com/youfou/03c1e0204ac092f873730f51671ce0a8" target="_blank" rel="external">groups.py</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;微信机器人-wxpy&quot;&gt;&lt;a href=&quot;#微信机器人-wxpy&quot; class=&quot;headerlink&quot; title=&quot;微信机器人 wxpy&quot;&gt;&lt;/a&gt;微信机器人 wxpy&lt;/h1&gt;&lt;p&gt;最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 &lt;code&gt;wxpy&lt;/code&gt; python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 github ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人&lt;br&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="微信" scheme="http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring MVC 传值</title>
@@ -1788,30 +1824,6 @@
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一篇博客</title>
-    <link href="http://yoursite.com/left/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/left/第一篇博客/</id>
-    <published>2017-05-29T07:30:06.000Z</published>
-    <updated>2017-06-29T09:39:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>一直想写博客的，但一直总是在忙项目，有时间也是玩会儿游戏，最近把游戏卸了，总算有时间了。以后会把写博客养成一个习惯，努力一个星期最少一篇，实在没时间就把之前写到印象笔记的文章重新整理一下。明天把搭建博客的过程写一下。</p>
-<p>现在写下来激励自己，加油。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;第一篇博客&quot;&gt;&lt;a href=&quot;#第一篇博客&quot; class=&quot;headerlink&quot; title=&quot;第一篇博客&quot;&gt;&lt;/a&gt;第一篇博客&lt;/h1&gt;&lt;p&gt;一直想写博客的，但一直总是在忙项目，有时间也是玩会儿游戏，最近把游戏卸了，总算有时间了。以后会把写博客养成一个习惯，
-    
-    </summary>
-    
-      <category term="left" scheme="http://yoursite.com/categories/left/"/>
-    
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
