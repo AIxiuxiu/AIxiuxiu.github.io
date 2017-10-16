@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-16T07:48:51.000Z</updated>
+  <updated>2017-10-16T07:54:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/python/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%20wxpy/"/>
     <id>http://yoursite.com/python/微信机器人 wxpy/</id>
     <published>2017-09-23T02:31:34.000Z</published>
-    <updated>2017-10-16T07:48:51.000Z</updated>
+    <updated>2017-10-16T07:54:25.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="微信机器人-wxpy"><a href="#微信机器人-wxpy" class="headerlink" title="微信机器人 wxpy"></a>微信机器人 wxpy</h1><p>最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 <code>wxpy</code> python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 github ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人<br><a id="more"></a><br>因为一些功能需要使用新内核分支 <code>new-core</code> 来完成，所以需要安装新内核分支 <code>new-core</code></p>
+    <content type="html"><![CDATA[<h1 id="微信机器人-wxpy"><a href="#微信机器人-wxpy" class="headerlink" title="微信机器人 wxpy"></a>微信机器人 wxpy</h1><p>最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 <code>wxpy</code> python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 <a href="https://github.com/AIxiuxiu/wxbot" target="_blank" rel="external">github</a> ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人<br><a id="more"></a><br>因为一些功能需要使用新内核分支 <code>new-core</code> 来完成，所以需要安装新内核分支 <code>new-core</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install -U git+https://github.com/youfou/wxpy.git@new-core</div></pre></td></tr></table></figure>
 <p>其它用到的库安装有如下：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> psutil</div><div class="line">pip install psutil</div><div class="line"><span class="meta">#</span> requests</div><div class="line">pip install requests</div><div class="line"><span class="meta">#</span> lxml</div><div class="line">pip install lxml</div></pre></td></tr></table></figure>
@@ -40,7 +40,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;微信机器人-wxpy&quot;&gt;&lt;a href=&quot;#微信机器人-wxpy&quot; class=&quot;headerlink&quot; title=&quot;微信机器人 wxpy&quot;&gt;&lt;/a&gt;微信机器人 wxpy&lt;/h1&gt;&lt;p&gt;最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 &lt;code&gt;wxpy&lt;/code&gt; python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 github ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人&lt;br&gt;
+      &lt;h1 id=&quot;微信机器人-wxpy&quot;&gt;&lt;a href=&quot;#微信机器人-wxpy&quot; class=&quot;headerlink&quot; title=&quot;微信机器人 wxpy&quot;&gt;&lt;/a&gt;微信机器人 wxpy&lt;/h1&gt;&lt;p&gt;最近没项目，刚好同学问我有没有做过微信自动加群，所以就去了解了一下，找到了 &lt;code&gt;wxpy&lt;/code&gt; python库。因为python只是自己稍微学了一点，所以就照着作者的代码自己学着玩玩，没想到晚了两天就把我的微信web端封掉了，可能是因为测试时调接口太过频繁，所以有些功能还没有测试完成。把写的代码上传到了 &lt;a href=&quot;https://github.com/AIxiuxiu/wxbot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; ，虽然只有简单的功能，但也希望可以帮助大家从始构建一个属于自己的微信机器人&lt;br&gt;
     
     </summary>
     
